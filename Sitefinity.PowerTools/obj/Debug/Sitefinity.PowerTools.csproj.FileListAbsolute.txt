@@ -1,0 +1,8 @@
+C:\PowerTools\Sitefinity.PowerTools\Sitefinity.PowerTools\bin\Debug\Sitefinity.PowerTools.dll
+C:\PowerTools\Sitefinity.PowerTools\Sitefinity.PowerTools\bin\Debug\Sitefinity.PowerTools.pdb
+C:\PowerTools\Sitefinity.PowerTools\Sitefinity.PowerTools\bin\Debug\Autofac.Configuration.dll
+C:\PowerTools\Sitefinity.PowerTools\Sitefinity.PowerTools\bin\Debug\Autofac.dll
+C:\PowerTools\Sitefinity.PowerTools\Sitefinity.PowerTools\bin\Debug\Autofac.xml
+C:\PowerTools\Sitefinity.PowerTools\Sitefinity.PowerTools\obj\Debug\Sitefinity.PowerTools.dll
+C:\PowerTools\Sitefinity.PowerTools\Sitefinity.PowerTools\obj\Debug\Sitefinity.PowerTools.pdb
+C:\PowerTools\Sitefinity.PowerTools\Sitefinity.PowerTools\obj\Debug\Sitefinity.PowerTools.csprojResolveAssemblyReference.cache
