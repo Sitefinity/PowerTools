@@ -2,6 +2,7 @@
 using System.IO;
 using System.Linq;
 using System.Web.Hosting;
+using Telerik.Sitefinity.Abstractions;
 
 namespace Sitefinity.PowerTools.RootTemplates
 {
@@ -60,6 +61,14 @@ namespace Sitefinity.PowerTools.RootTemplates
             }
 
             return this;
+        }
+
+        public bool IsBackend
+        {
+            get
+            {
+                return AppSettings.CurrentSettings.IsBackend;
+            }
         }
 
         private string template;
