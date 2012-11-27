@@ -4,10 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Web.Routing;
 using Autofac;
+using Telerik.Sitefinity;
 using Telerik.Sitefinity.Abstractions.VirtualPath;
 using Telerik.Sitefinity.Modules.Pages;
 using Telerik.Sitefinity.Mvc.Rendering;
 using Telerik.Sitefinity.Pages.Model;
+using Telerik.Sitefinity.Web.UI;
 
 namespace Sitefinity.PowerTools.RootTemplates
 {
@@ -38,7 +40,9 @@ namespace Sitefinity.PowerTools.RootTemplates
                 return;
             }
 
-            RootTemplate result = this.GetRootTemplate(new RootTemplate(), context, theme);
+            var defaultRootTemplate = new RootTemplate();
+            defaultRootTemplate.FromString(ControlUtilities.GetSitefinityTextResource(Constants.DefaultFrontendPageTemplate));
+            RootTemplate result = this.GetRootTemplate(defaultRootTemplate, context, theme);
             this.ProcessStringTemplate(result.Template, output, placeHolders, directives);
         }
 
@@ -69,7 +73,9 @@ namespace Sitefinity.PowerTools.RootTemplates
                 return;
             }
 
-            RootTemplate result = this.GetRootTemplate(new RootTemplate(), context, theme);
+            var defaultRootTemplate = new RootTemplate();
+            defaultRootTemplate.FromString(ControlUtilities.GetSitefinityTextResource(Constants.DefaultFrontendPageTemplate));
+            RootTemplate result = this.GetRootTemplate(defaultRootTemplate, context, theme);
             this.ProcessStringTemplate(result.Template, output, placeHolders, directives);
         }
 
@@ -87,7 +93,7 @@ namespace Sitefinity.PowerTools.RootTemplates
                         result = result.FromString(item.Data);
                         break;
                     }
-                    if (result == null)
+                    if (string.IsNullOrEmpty(result.Template))
                         result = result.FromString(item.Data);
                 }
             }

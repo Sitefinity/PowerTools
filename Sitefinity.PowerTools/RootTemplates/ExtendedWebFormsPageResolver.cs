@@ -7,6 +7,8 @@ using Telerik.Sitefinity.Abstractions.VirtualPath;
 using Telerik.Sitefinity.Modules.Pages;
 using Telerik.Sitefinity.Pages.Model;
 using Autofac;
+using Telerik.Sitefinity.Web.UI;
+using Telerik.Sitefinity;
 
 namespace Sitefinity.PowerTools.RootTemplates
 {
@@ -37,7 +39,9 @@ namespace Sitefinity.PowerTools.RootTemplates
                 return;
             }
 
-            RootTemplate result = this.GetRootTemplate(new RootTemplate(), context, theme);
+            var defaultRootTemplate = new RootTemplate();
+            defaultRootTemplate.FromString(ControlUtilities.GetSitefinityTextResource(Constants.DefaultFrontendPageTemplate));
+            RootTemplate result = this.GetRootTemplate(defaultRootTemplate, context, theme);
             this.ProcessStringTemplate(result.Template, output, placeHolders, directives);
         }
 
@@ -68,7 +72,9 @@ namespace Sitefinity.PowerTools.RootTemplates
                 return;
             }
 
-            RootTemplate result = this.GetRootTemplate(new RootTemplate(), context, theme);
+            var defaultRootTemplate = new RootTemplate();
+            defaultRootTemplate.FromString(ControlUtilities.GetSitefinityTextResource(Constants.DefaultFrontendPageTemplate));
+            RootTemplate result = this.GetRootTemplate(defaultRootTemplate, context, theme);
             this.ProcessStringTemplate(result.Template, output, placeHolders, directives);
         }
 
@@ -83,11 +89,11 @@ namespace Sitefinity.PowerTools.RootTemplates
                     var key = item.Theme ?? "Default";
                     if (key.Equals(theme, StringComparison.OrdinalIgnoreCase))
                     {
-                        result = new RootTemplate(item.Data);
+                        result = result.FromString(item.Data);
                         break;
                     }
-                    if (result == null)
-                        result = new RootTemplate(item.Data);
+                    if (string.IsNullOrEmpty(result.Template))
+                        result = result.FromString(item.Data);
                 }
             }
 
