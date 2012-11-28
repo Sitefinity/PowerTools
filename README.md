@@ -3,9 +3,7 @@ PowerTools
 
 A set of extensions for Sitefinity CMS that provide developers with solutions to common problems not available out of the box.
 
-Install via NuGet: Install-Package SitefinityPowerTools
-
-Check the wiki for documentation: https://github.com/Sitefinity/PowerTools/wiki
+Check the wiki for full documentation: https://github.com/Sitefinity/PowerTools/wiki
 
 **Sitefinity Power Tools** is a set of tools for Sitefinity that allow developers to implement advanced scenarios, that are either not possible or not obvious enough in the core product. Some of these tools will eventually make their way to the core product, some on the other hand will only be available through the Power Tools project.
 
