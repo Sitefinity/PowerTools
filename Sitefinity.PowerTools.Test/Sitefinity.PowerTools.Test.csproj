@@ -42,13 +42,15 @@
     <Reference Include="System.Web" />
     <Reference Include="Telerik.OpenAccess, Version=2010.3.1306.1, Culture=neutral, PublicKeyToken=7ce17eeaf1d59342, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\ReferenceAssemblies\Telerik.OpenAccess.dll</HintPath>
+      <HintPath>..\ReferenceAssemblies\Telerik.OpenAccess.dll</HintPath>
     </Reference>
-    <Reference Include="Telerik.Sitefinity">
-      <HintPath>..\..\ReferenceAssemblies\Telerik.Sitefinity.dll</HintPath>
+    <Reference Include="Telerik.Sitefinity, Version=5.2.3800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ReferenceAssemblies\Telerik.Sitefinity.dll</HintPath>
     </Reference>
-    <Reference Include="Telerik.Sitefinity.Model">
-      <HintPath>..\..\ReferenceAssemblies\Telerik.Sitefinity.Model.dll</HintPath>
+    <Reference Include="Telerik.Sitefinity.Model, Version=5.2.3800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ReferenceAssemblies\Telerik.Sitefinity.Model.dll</HintPath>
     </Reference>
   </ItemGroup>
   <Choose>
