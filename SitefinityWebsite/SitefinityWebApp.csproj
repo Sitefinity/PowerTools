@@ -60,76 +60,89 @@
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AjaxControlToolkit, Version=3.0.20820.16598, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\AjaxControlToolkit.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\ReferenceAssemblies\AjaxControlToolkit.dll</HintPath>
     </Reference>
     <Reference Include="Antlr3.Runtime">
-      <HintPath>..\Sitefinity.PowerTools\packages\WebGrease.1.1.0\lib\Antlr3.Runtime.dll</HintPath>
+      <HintPath>..\packages\WebGrease.1.1.0\lib\Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Http, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ReferenceAssemblies\Microsoft.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Http.Extensions">
+      <HintPath>..\ReferenceAssemblies\Microsoft.Http.Extensions.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
-      <HintPath>..\Sitefinity.PowerTools\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Newtonsoft.Json.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
     </Reference>
     <Reference Include="DirectShowLib-2005, Version=2.1.0.0, Culture=neutral, PublicKeyToken=67e7b740cdfc2d3f, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\DirectShowLib-2005.dll</HintPath>
+      <HintPath>..\ReferenceAssemblies\DirectShowLib-2005.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="DocumentFormat.OpenXml, Version=2.0.5022.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\DocumentFormat.OpenXml.dll</HintPath>
+      <HintPath>..\ReferenceAssemblies\DocumentFormat.OpenXml.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Interop.DexterLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=59345589f61c4f31, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <EmbedInteropTypes>True</EmbedInteropTypes>
-      <HintPath>bin\Interop.DexterLib.dll</HintPath>
+      <HintPath>..\ReferenceAssemblies\Interop.DexterLib.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Microsoft.IdentityModel, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Microsoft.IdentityModel.dll</HintPath>
+      <HintPath>..\ReferenceAssemblies\Microsoft.IdentityModel.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Microsoft.Practices.ServiceLocation.dll</HintPath>
+      <HintPath>..\ReferenceAssemblies\Microsoft.Practices.ServiceLocation.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.WindowsAzure.Diagnostics, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Microsoft.WindowsAzure.Diagnostics.dll</HintPath>
+      <HintPath>..\ReferenceAssemblies\Microsoft.WindowsAzure.Diagnostics.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.WindowsAzure.ServiceRuntime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Microsoft.WindowsAzure.ServiceRuntime.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\ReferenceAssemblies\Microsoft.WindowsAzure.ServiceRuntime.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.WindowsAzure.StorageClient, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Microsoft.WindowsAzure.StorageClient.dll</HintPath>
+      <HintPath>..\ReferenceAssemblies\Microsoft.WindowsAzure.StorageClient.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="mysql.data, Version=5.2.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\MySql.Data.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="payflow_dotNET">
-      <HintPath>bin\payflow_dotNET.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="System" />
-    <Reference Include="System.Activities" />
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ReferenceAssemblies\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NHamcrest, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31c3ea0b6fcf8c4a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ReferenceAssemblies\NHamcrest.dll</HintPath>
+    </Reference>
+    <Reference Include="payflow_dotNET">
+      <HintPath>..\ReferenceAssemblies\payflow_dotNET.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Activities">
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -149,239 +162,235 @@
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Web.Extensions.Design" />
-    <Reference Include="System.Web.Helpers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>bin\System.Web.Helpers.dll</HintPath>
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ReferenceAssemblies\System.Web.Helpers.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>bin\System.Web.Mvc.dll</HintPath>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ReferenceAssemblies\System.Web.Mvc.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System.Web.Optimization">
-      <HintPath>..\Sitefinity.PowerTools\packages\Microsoft.AspNet.Web.Optimization.1.0.0\lib\net40\System.Web.Optimization.dll</HintPath>
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.0.0\lib\net40\System.Web.Optimization.dll</HintPath>
     </Reference>
-    <Reference Include="System.Web.Razor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>bin\System.Web.Razor.dll</HintPath>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ReferenceAssemblies\System.Web.Razor.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System.Web.Services" />
-    <Reference Include="System.Web.WebPages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>bin\System.Web.WebPages.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.Web.WebPages.Deployment, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>bin\System.Web.WebPages.Deployment.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.Web.WebPages.Razor, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>bin\System.Web.WebPages.Razor.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.Windows, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e, processorArchitecture=MSIL">
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\System.Windows.dll</HintPath>
+      <HintPath>..\ReferenceAssemblies\System.Web.WebPages.dll</HintPath>
       <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ReferenceAssemblies\System.Web.WebPages.Deployment.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ReferenceAssemblies\System.Web.WebPages.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows">
+      <HintPath>..\ReferenceAssemblies\System.Windows.dll</HintPath>
     </Reference>
     <Reference Include="System.Xaml" />
     <Reference Include="System.XML" />
     <Reference Include="System.Xml.Linq" />
-    <Reference Include="Telerik.OpenAccess, Version=2011.2.713.3, Culture=neutral, PublicKeyToken=7ce17eeaf1d59342, processorArchitecture=MSIL">
+    <Reference Include="Telerik.OpenAccess, Version=2010.3.1306.1, Culture=neutral, PublicKeyToken=7ce17eeaf1d59342, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Telerik.OpenAccess.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\ReferenceAssemblies\Telerik.OpenAccess.dll</HintPath>
     </Reference>
-    <Reference Include="Telerik.OpenAccess.35.Extensions, Version=2011.2.713.3, Culture=neutral, PublicKeyToken=7ce17eeaf1d59342, processorArchitecture=MSIL">
+    <Reference Include="Telerik.OpenAccess.35.Extensions, Version=2010.3.1306.1, Culture=neutral, PublicKeyToken=7ce17eeaf1d59342, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Telerik.OpenAccess.35.Extensions.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\ReferenceAssemblies\Telerik.OpenAccess.35.Extensions.dll</HintPath>
     </Reference>
-    <Reference Include="Telerik.OpenAccess.Adonet2, Version=2010.2.1013.8, Culture=neutral, PublicKeyToken=7ce17eeaf1d59342, processorArchitecture=MSIL">
+    <Reference Include="Telerik.OpenAccess.Adonet2, Version=2010.3.1306.1, Culture=neutral, PublicKeyToken=7ce17eeaf1d59342, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Telerik.OpenAccess.Adonet2.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\ReferenceAssemblies\Telerik.OpenAccess.Adonet2.dll</HintPath>
     </Reference>
     <Reference Include="Telerik.OpenAccess.Config, Version=1.0.0.0, Culture=neutral, PublicKeyToken=7ce17eeaf1d59342, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Telerik.OpenAccess.Config.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\ReferenceAssemblies\Telerik.OpenAccess.Config.dll</HintPath>
     </Reference>
-    <Reference Include="Telerik.OpenAccess.MySql.Data, Version=2010.2.1013.8, Culture=neutral, PublicKeyToken=7ce17eeaf1d59342, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Telerik.OpenAccess.MySql.Data.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="Telerik.OpenAccess.MySql.Data">
+      <HintPath>..\ReferenceAssemblies\Telerik.OpenAccess.MySql.Data.dll</HintPath>
     </Reference>
-    <Reference Include="Telerik.OpenAccess.Runtime, Version=2010.2.1013.8, Culture=neutral, PublicKeyToken=7ce17eeaf1d59342, processorArchitecture=MSIL">
+    <Reference Include="Telerik.OpenAccess.Runtime, Version=2010.3.1306.1, Culture=neutral, PublicKeyToken=7ce17eeaf1d59342, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Telerik.OpenAccess.Runtime.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\ReferenceAssemblies\Telerik.OpenAccess.Runtime.dll</HintPath>
     </Reference>
-    <Reference Include="Telerik.OpenAccess.Web, Version=2010.2.1013.8, Culture=neutral, PublicKeyToken=7ce17eeaf1d59342, processorArchitecture=MSIL">
+    <Reference Include="Telerik.OpenAccess.Web, Version=2012.3.1012.1, Culture=neutral, PublicKeyToken=7ce17eeaf1d59342, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Telerik.OpenAccess.Web.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\ReferenceAssemblies\Telerik.OpenAccess.Web.dll</HintPath>
     </Reference>
     <Reference Include="Telerik.Reporting, Version=5.1.11.713, Culture=neutral, PublicKeyToken=a9d7983dfcc261be, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Telerik.Reporting.dll</HintPath>
+      <HintPath>..\ReferenceAssemblies\Telerik.Reporting.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Telerik.Reporting.OpenXmlRendering, Version=5.1.11.713, Culture=neutral, PublicKeyToken=a9d7983dfcc261be, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Telerik.Reporting.OpenXmlRendering.dll</HintPath>
+      <HintPath>..\ReferenceAssemblies\Telerik.Reporting.OpenXmlRendering.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Telerik.Reporting.XpsRendering, Version=5.1.11.713, Culture=neutral, PublicKeyToken=a9d7983dfcc261be, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Telerik.Reporting.XpsRendering.dll</HintPath>
+      <HintPath>..\ReferenceAssemblies\Telerik.Reporting.XpsRendering.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Telerik.ReportViewer.WebForms, Version=5.1.11.713, Culture=neutral, PublicKeyToken=a9d7983dfcc261be, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Telerik.ReportViewer.WebForms.dll</HintPath>
+      <HintPath>..\ReferenceAssemblies\Telerik.ReportViewer.WebForms.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Telerik.Sitefinity, Version=4.0.790.0, Culture=neutral, PublicKeyToken=b28c218413bdf563, processorArchitecture=MSIL">
+    <Reference Include="Telerik.Sitefinity, Version=5.2.3800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Telerik.Sitefinity.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\ReferenceAssemblies\Telerik.Sitefinity.dll</HintPath>
     </Reference>
     <Reference Include="Telerik.Sitefinity.Analytics.Server.Core, Version=4.0.810.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Telerik.Sitefinity.Analytics.Server.Core.dll</HintPath>
+      <HintPath>..\ReferenceAssemblies\Telerik.Sitefinity.Analytics.Server.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Telerik.Sitefinity.Analytics.Server.DependencyResolution, Version=4.0.810.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Telerik.Sitefinity.Analytics.Server.DependencyResolution.dll</HintPath>
+      <HintPath>..\ReferenceAssemblies\Telerik.Sitefinity.Analytics.Server.DependencyResolution.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Telerik.Sitefinity.Analytics.Server.GoogleAnalyticsPlugin, Version=4.0.810.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Telerik.Sitefinity.Analytics.Server.GoogleAnalyticsPlugin.dll</HintPath>
+      <HintPath>..\ReferenceAssemblies\Telerik.Sitefinity.Analytics.Server.GoogleAnalyticsPlugin.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Telerik.Sitefinity.Analytics.Server.Infrastructure, Version=4.0.810.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Telerik.Sitefinity.Analytics.Server.Infrastructure.dll</HintPath>
+      <HintPath>..\ReferenceAssemblies\Telerik.Sitefinity.Analytics.Server.Infrastructure.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Telerik.Sitefinity.Model, Version=4.0.790.0, Culture=neutral, PublicKeyToken=b28c218413bdf563, processorArchitecture=MSIL">
+    <Reference Include="Telerik.Sitefinity.Model, Version=5.2.3800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Telerik.Sitefinity.Model.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\ReferenceAssemblies\Telerik.Sitefinity.Model.dll</HintPath>
     </Reference>
     <Reference Include="Telerik.Sitefinity.Resources, Version=4.0.810.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Telerik.Sitefinity.Resources.dll</HintPath>
+      <HintPath>..\ReferenceAssemblies\Telerik.Sitefinity.Resources.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Telerik.Sitefinity.Services.Documents.Impl">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Telerik.Sitefinity.Services.Documents.Impl.dll</HintPath>
+      <HintPath>..\ReferenceAssemblies\Telerik.Sitefinity.Services.Documents.Impl.dll</HintPath>
       <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.Services.Statistics">
+      <HintPath>..\ReferenceAssemblies\Telerik.Sitefinity.Services.Statistics.dll</HintPath>
     </Reference>
     <Reference Include="Telerik.Sitefinity.Services.Statistics.Impl">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Telerik.Sitefinity.Services.Statistics.Impl.dll</HintPath>
+      <HintPath>..\ReferenceAssemblies\Telerik.Sitefinity.Services.Statistics.Impl.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Telerik.Sitefinity.Personalization">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Telerik.Sitefinity.Personalization.dll</HintPath>
+      <HintPath>..\ReferenceAssemblies\Telerik.Sitefinity.Personalization.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Telerik.Sitefinity.Personalization.Impl">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Telerik.Sitefinity.Personalization.Impl.dll</HintPath>
+      <HintPath>..\ReferenceAssemblies\Telerik.Sitefinity.Personalization.Impl.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Telerik.Sitefinity.DropboxLibraries">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Telerik.Sitefinity.DropboxLibraries.dll</HintPath>
+      <HintPath>..\ReferenceAssemblies\Telerik.Sitefinity.DropboxLibraries.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Telerik.Sitefinity.Services.Documents">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Telerik.Sitefinity.Services.Documents.dll</HintPath>
+      <HintPath>..\ReferenceAssemblies\Telerik.Sitefinity.Services.Documents.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Telerik.Sitefinity.ContentModules">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Telerik.Sitefinity.ContentModules.dll</HintPath>
+      <HintPath>..\ReferenceAssemblies\Telerik.Sitefinity.ContentModules.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Telerik.Sitefinity.Ecommerce">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Telerik.Sitefinity.Ecommerce.dll</HintPath>
+      <HintPath>..\ReferenceAssemblies\Telerik.Sitefinity.Ecommerce.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Telerik.Sitefinity.Forums">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Telerik.Sitefinity.Forums.dll</HintPath>
+      <HintPath>..\ReferenceAssemblies\Telerik.Sitefinity.Forums.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Telerik.Sitefinity.Search.Impl">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Telerik.Sitefinity.Search.Impl.dll</HintPath>
+      <HintPath>..\ReferenceAssemblies\Telerik.Sitefinity.Search.Impl.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Telerik.Sitefinity.Search">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Telerik.Sitefinity.Search.dll</HintPath>
+      <HintPath>..\ReferenceAssemblies\Telerik.Sitefinity.Search.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Telerik.Sitefinity.Thunder.Contracts, Version=5.0.4427.32064, Culture=neutral, PublicKeyToken=b28c218413bdf563, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Telerik.Sitefinity.Thunder.Contracts.dll</HintPath>
+      <HintPath>..\ReferenceAssemblies\Telerik.Sitefinity.Thunder.Contracts.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Telerik.Sitefinity.Thunder.Module, Version=5.0.4427.32190, Culture=neutral, PublicKeyToken=b28c218413bdf563, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Telerik.Sitefinity.Thunder.Module.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Telerik.Sitefinity.Utilities, Version=4.0.810.0, Culture=neutral, PublicKeyToken=b28c218413bdf563, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Telerik.Sitefinity.Utilities.dll</HintPath>
+      <HintPath>..\ReferenceAssemblies\Telerik.Sitefinity.Thunder.Module.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Telerik.Sitefinity.Services.Notifications">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Telerik.Sitefinity.Services.Notifications.dll</HintPath>
+      <HintPath>..\ReferenceAssemblies\Telerik.Sitefinity.Services.Notifications.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Telerik.Sitefinity.Services.Notifications.Impl">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Telerik.Sitefinity.Services.Notifications.Impl.dll</HintPath>
+      <HintPath>..\ReferenceAssemblies\Telerik.Sitefinity.Services.Notifications.Impl.dll</HintPath>
       <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Sitefinity.Utilities, Version=5.2.3800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ReferenceAssemblies\Telerik.Sitefinity.Utilities.dll</HintPath>
     </Reference>
     <Reference Include="Telerik.Web.Design, Version=2010.2.929.40, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Telerik.Web.Design.dll</HintPath>
+      <HintPath>..\ReferenceAssemblies\Telerik.Web.Design.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Telerik.Web.UI">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Telerik.Web.UI.dll</HintPath>
+      <HintPath>..\ReferenceAssemblies\Telerik.Web.UI.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Telerik.Web.UI.Skins">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Telerik.Web.UI.Skins.dll</HintPath>
+      <HintPath>..\ReferenceAssemblies\Telerik.Web.UI.Skins.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Telerik.Windows.RadUploadHandler, Version=2010.2.924.35, Culture=neutral, PublicKeyToken=5803cfa389c90ce7, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Telerik.Windows.RadUploadHandler.dll</HintPath>
+      <HintPath>..\ReferenceAssemblies\Telerik.Windows.RadUploadHandler.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Twitterizer2, Version=2.2.1.32085, Culture=neutral, PublicKeyToken=69d1469eac671567, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Twitterizer2.dll</HintPath>
+      <HintPath>..\ReferenceAssemblies\Twitterizer2.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="WebGrease">
-      <HintPath>..\Sitefinity.PowerTools\packages\WebGrease.1.1.0\lib\WebGrease.dll</HintPath>
+      <HintPath>..\packages\WebGrease.1.1.0\lib\WebGrease.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -550,12 +559,6 @@
     <Folder Include="Mvc\Views\Shared\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Sitefinity.PowerTools\Sitefinity.PowerTools.csproj">
-      <Project>{de0c24d8-fb14-480c-aacc-b7d0dc400e96}</Project>
-      <Name>Sitefinity.PowerTools</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="RootTemplates\FrontendRoot.Master" />
   </ItemGroup>
   <ItemGroup>
@@ -566,6 +569,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sitefinity.PowerTools\Sitefinity.PowerTools.csproj">
+      <Project>{de0c24d8-fb14-480c-aacc-b7d0dc400e96}</Project>
+      <Name>Sitefinity.PowerTools</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
