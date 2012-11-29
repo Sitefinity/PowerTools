@@ -3,3 +3,25 @@
 <h1>
     @Model.ListTitle
 </h1>
+
+@if (Model.ListType == SitefinityWebApp.Mvc.Models.AdHocListModel.BulletsListType)
+{
+    @:<ul>
+}
+else
+{
+    @:<ol>
+}
+
+<li>Item 1</li>
+<li>Item 2</li>
+
+@if (Model.ListType == SitefinityWebApp.Mvc.Models.AdHocListModel.BulletsListType)
+{
+    @:</ul>
+}
+else
+{
+    @:</ol>
+}
+    

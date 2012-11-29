@@ -10,5 +10,14 @@ namespace SitefinityWebApp.Mvc.Models
             get;
             set;
         }
+
+        public string ListType
+        {
+            get;
+            set;
+        }
+
+        public const string NumbersListType = "numbers";
+        public const string BulletsListType = "bullets";
     }
 }

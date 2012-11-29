@@ -21,11 +21,27 @@ namespace SitefinityWebApp.Mvc.Controllers
             }
         }
 
+        public string ListType
+        {
+            get
+            {
+                return this.listType;
+            }
+            set
+            {
+                this.listType = value;
+            }
+        }
+
         public ActionResult Index()
         {
-            return View(new AdHocListModel() { ListTitle = this.ListTitle });
+            return View(new AdHocListModel() { 
+                ListTitle = this.ListTitle,
+                ListType = this.ListType
+            });
         }
 
         private string listTitle = "My list";
+        private string listType = AdHocListModel.NumbersListType;
     }
 }
