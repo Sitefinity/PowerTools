@@ -524,7 +524,6 @@
     <Content Include="Sitefinity\Services\Versioning\HistoryService.svc" />
     <Content Include="Sitefinity\Services\Workflow\WorkflowDefinitionService.svc" />
     <Content Include="Sitefinity\Services\Workflow\WorkflowService.svc" />
-    <Content Include="Styles\ad-hoc-list.css" />
     <Content Include="Styles\Bootstrap\css\bootstrap-responsive.css" />
     <Content Include="Styles\Bootstrap\css\bootstrap-responsive.min.css" />
     <Content Include="Styles\Bootstrap\css\bootstrap.css" />

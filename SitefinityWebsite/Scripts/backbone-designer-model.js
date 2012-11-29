@@ -1,20 +1,18 @@
 ﻿; (function () {
   Backbone.DesignerModel = Backbone.Model.extend({
 
-    defaults: {
-      "listTitle": ""
-    },
-
     initialize: function () {
       this.get_propertyEditor()._designer = this;
     },
 
     applyChanges: function () {
       this.get_controlData().ListTitle = this.get("listTitle");
+      this.get_controlData().ListType = this.get("listType");
     },
 
     refreshUI: function () {
       this.set("listTitle", this.get_controlData().ListTitle);
+      this.set("listType", this.get_controlData().ListType);
     },
 
     get_controlData: function () {

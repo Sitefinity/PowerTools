@@ -1,27 +1,30 @@
 ﻿@model SitefinityWebApp.Mvc.Models.AdHocListModel
 
-<h1>
-    @Model.ListTitle
-</h1>
+<div class="sfContentBlock">
 
-@if (Model.ListType == SitefinityWebApp.Mvc.Models.AdHocListModel.BulletsListType)
-{
-    @:<ul>
-}
-else
-{
-    @:<ol>
-}
+    <h2>
+        @Model.ListTitle
+    </h2>
 
-<li>Item 1</li>
-<li>Item 2</li>
+    @if (Model.ListType == SitefinityWebApp.Mvc.Models.AdHocListModel.BulletsListType)
+    {
+        @:<ul>
+    }
+    else
+    {
+        @:<ol>
+    }
 
-@if (Model.ListType == SitefinityWebApp.Mvc.Models.AdHocListModel.BulletsListType)
-{
-    @:</ul>
-}
-else
-{
-    @:</ol>
-}
-    
+    <li>Item 1</li>
+    <li>Item 2</li>
+
+    @if (Model.ListType == SitefinityWebApp.Mvc.Models.AdHocListModel.BulletsListType)
+    {
+        @:</ul>
+    }
+    else
+    {
+        @:</ol>
+    }
+
+</div>
