@@ -3,6 +3,8 @@
 
     initialize: function () {
       this.get_propertyEditor()._designer = this;
+      this.set("listTitle", this.get_controlData().ListTitle);
+      this.set("listType", this.get_controlData().ListType);
     },
 
     applyChanges: function () {
