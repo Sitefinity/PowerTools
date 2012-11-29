@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace SitefinityWebApp.Mvc.Controllers
 {
-    public class MessageDesignerController : Controller
+    public class AdHocListDesignerController : Controller
     {
         public ActionResult Index()
         {

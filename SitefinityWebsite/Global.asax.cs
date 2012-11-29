@@ -19,7 +19,7 @@ namespace SitefinityWebApp
             // register mvc designers
             PowerTools.Instance
                       .Mvc
-                      .RegisterDesigner<MessageController, MessageDesignerController>();
+                      .RegisterDesigner<AdHocListController, AdHocListDesignerController>();
 
             // register bundles
             BundleConfig.RegisterBundles(BundleTable.Bundles);

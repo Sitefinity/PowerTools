@@ -3,9 +3,9 @@ using System.Linq;
 
 namespace SitefinityWebApp.Mvc.Models
 {
-    public class MessageModel
+    public class AdHocListModel
     {
-        public string Message
+        public string ListTitle
         {
             get;
             set;

@@ -400,9 +400,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Mvc\Controllers\MessageController.cs" />
-    <Compile Include="Mvc\Controllers\MessageDesignerController.cs" />
-    <Compile Include="Mvc\Models\MessageModel.cs" />
+    <Compile Include="Mvc\Controllers\AdHocListController.cs" />
+    <Compile Include="Mvc\Controllers\AdHocListDesignerController.cs" />
+    <Compile Include="Mvc\Models\AdHocListModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -411,6 +411,7 @@
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\adhoc-list.designer.js" />
+    <Content Include="Scripts\backbone-designer-model.js" />
     <Content Include="Scripts\backbone.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -562,10 +563,10 @@
     <Content Include="RootTemplates\FrontendRoot.Master" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Mvc\Views\Message\Index.cshtml" />
+    <Content Include="Mvc\Views\AdHocList\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Mvc\Views\MessageDesigner\Index.cshtml" />
+    <Content Include="Mvc\Views\AdHocListDesigner\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

@@ -1,0 +1,200 @@
+----------------------------------------
+Timestamp: 11/29/2012 12:41:57 PM
+
+Message: Shutting down threadpool...
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 11/29/2012 12:41:57 PM
+
+Message: Thread pool 'ThreadPool': Shutdown of thread pool completed. All currently running threads will finish their work and stop.
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 11/29/2012 12:41:57 PM
+
+Message: WorkerThread is shut down
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 11/29/2012 12:41:57 PM
+
+Message: Background task scheduler shut down
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 11/29/2012 12:41:57 PM
+
+Message: WorkerThread is shut down
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 11/29/2012 12:41:57 PM
+
+Message: WorkerThread is shut down
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 11/29/2012 12:41:57 PM
+
+Message: WorkerThread is shut down
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 11/29/2012 12:42:27 PM
+
+Message: Shutting down threadpool...
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 11/29/2012 12:42:27 PM
+
+Message: Thread pool 'ThreadPool': Shutdown of thread pool completed. Threads aborted.
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 11/29/2012 2:35:09 PM
+
+Message: Shutting down threadpool...
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 11/29/2012 2:35:09 PM
+
+Message: Thread pool 'ThreadPool': Shutdown of thread pool completed. All currently running threads will finish their work and stop.
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 11/29/2012 2:35:09 PM
+
+Message: WorkerThread is shut down
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 11/29/2012 2:35:09 PM
+
+Message: WorkerThread is shut down
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 11/29/2012 2:35:09 PM
+
+Message: WorkerThread is shut down
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 11/29/2012 2:35:09 PM
+
+Message: Background task scheduler shut down
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 11/29/2012 2:35:09 PM
+
+Message: WorkerThread is shut down
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 11/29/2012 2:35:39 PM
+
+Message: Shutting down threadpool...
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 11/29/2012 2:35:39 PM
+
+Message: Thread pool 'ThreadPool': Shutdown of thread pool completed. Threads aborted.
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 11/29/2012 2:38:53 PM
+
+Message: Error while executing the Task: Value cannot be null.
+Parameter name: input, StackTrace:    at System.Guid.Parse(String input)
+   at Telerik.Sitefinity.Services.Statistics.ReconcilerTask.ReconcileUserData()
+   at Telerik.Sitefinity.Services.SystemManager.RunWithElevatedPrivilege(RunWithElevatedPrivilegeDelegate delegateToRun, Object[] parameters, String urlRequest)
+   at Telerik.Sitefinity.BackgroundTasks.WorkerThread.Run(IBackgroundTaskContext context)
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 11/29/2012 2:50:36 PM
+
+Message: Shutting down threadpool...
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 11/29/2012 2:50:36 PM
+
+Message: Thread pool 'ThreadPool': Shutdown of thread pool completed. All currently running threads will finish their work and stop.
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 11/29/2012 2:50:36 PM
+
+Message: WorkerThread is shut down
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 11/29/2012 2:50:36 PM
+
+Message: WorkerThread is shut down
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 11/29/2012 2:50:36 PM
+
+Message: WorkerThread is shut down
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 11/29/2012 2:50:37 PM
+
+Message: WorkerThread is shut down
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 11/29/2012 2:50:37 PM
+
+Message: Background task scheduler shut down
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 11/29/2012 2:51:06 PM
+
+Message: Shutting down threadpool...
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 11/29/2012 2:51:06 PM
+
+Message: Thread pool 'ThreadPool': Shutdown of thread pool completed. Threads aborted.
+
+
+----------------------------------------
