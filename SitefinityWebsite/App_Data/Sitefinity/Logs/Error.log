@@ -1,0 +1,438 @@
+----------------------------------------
+Timestamp: 11/28/2012 11:36:11 AM
+
+Message: HandlingInstanceID: 576d9fca-24d7-419a-82cb-e3e25fac1a46
+An exception of type 'System.NotImplementedException' occurred and was caught.
+------------------------------------------------------------------------------
+11/28/2012 13:36:11
+Type : System.NotImplementedException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : The method or operation is not implemented.
+Source : Sitefinity.PowerTools
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : System.Web.UI.Control ResolveMvcDesigner(System.Type)
+HResult : -2147467263
+Stack Trace :    at Sitefinity.PowerTools.Mvc.ExtendedPropertyEditor.ResolveMvcDesigner(Type widgetType) in c:\PowerTools\Sitefinity.PowerTools\Sitefinity.PowerTools\Mvc\ExtendedPropertyEditor.cs:line 27
+   at Sitefinity.PowerTools.Mvc.ExtendedPropertyEditor.PrepareControlDesigner(ControlData ctrlData) in c:\PowerTools\Sitefinity.PowerTools\Sitefinity.PowerTools\Mvc\ExtendedPropertyEditor.cs:line 14
+   at Telerik.Sitefinity.Web.UI.PropertyEditor.InitializeControls(GenericContainer dialogContainer)
+   at Telerik.Sitefinity.Web.UI.DialogBase.CreateChildControls()
+   at System.Web.UI.Control.EnsureChildControls()
+   at System.Web.UI.WebControls.CompositeControl.get_Controls()
+   at Telerik.Sitefinity.Web.UI.PropertyEditor.OnInit(EventArgs e)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at Telerik.Sitefinity.Web.DialogRouteHandler.InitializeContent(Page handler, RequestContext requestContext)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+Additional Info:
+
+MachineName : OSMAK
+TimeStamp : 11/28/2012 11:36:11 AM
+FullName : Telerik.Sitefinity.Utilities, Version=5.2.3800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/6/ROOT-4-129985761301905834
+ThreadIdentity : admin
+WindowsIdentity : NT AUTHORITY\SYSTEM
+Requested URL : http://localhost:8011/Sitefinity/Dialog/PropertyEditor?Id=31055463-a2db-4be0-837c-2818ac37ea53&MediaType=0&PageId=14e19386-a0a7-43a4-9c2d-56f2772d8f88&propertyValueCulture=&ParentPageId=1c5fa98c-9cb0-4a26-a6ea-5233d6b4bba8&hideSaveAllTranslations=true
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: OSMAK
+
+App Domain: /LM/W3SVC/6/ROOT-4-129985761301905834
+
+ProcessId: 11524
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:11340
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 11/28/2012 11:45:52 AM
+
+Message: HandlingInstanceID: 38fa4d7f-18ff-406c-bce1-e5f030eefcaf
+An exception of type 'System.Collections.Generic.KeyNotFoundException' occurred and was caught.
+-----------------------------------------------------------------------------------------------
+11/28/2012 13:45:52
+Type : System.Collections.Generic.KeyNotFoundException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : The given key was not present in the dictionary.
+Source : Sitefinity.PowerTools
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : System.Web.UI.Control ResolveMvcDesigner(System.Type)
+HResult : -2146232969
+Stack Trace :    at Sitefinity.PowerTools.Mvc.ExtendedPropertyEditor.ResolveMvcDesigner(Type widgetType) in c:\PowerTools\Sitefinity.PowerTools\Sitefinity.PowerTools\Mvc\ExtendedPropertyEditor.cs:line 35
+   at Sitefinity.PowerTools.Mvc.ExtendedPropertyEditor.PrepareControlDesigner(ControlData ctrlData) in c:\PowerTools\Sitefinity.PowerTools\Sitefinity.PowerTools\Mvc\ExtendedPropertyEditor.cs:line 16
+   at Telerik.Sitefinity.Web.UI.PropertyEditor.InitializeControls(GenericContainer dialogContainer)
+   at Telerik.Sitefinity.Web.UI.DialogBase.CreateChildControls()
+   at System.Web.UI.Control.EnsureChildControls()
+   at System.Web.UI.WebControls.CompositeControl.get_Controls()
+   at Telerik.Sitefinity.Web.UI.PropertyEditor.OnInit(EventArgs e)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at Telerik.Sitefinity.Web.DialogRouteHandler.InitializeContent(Page handler, RequestContext requestContext)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+Additional Info:
+
+MachineName : OSMAK
+TimeStamp : 11/28/2012 11:45:52 AM
+FullName : Telerik.Sitefinity.Utilities, Version=5.2.3800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/6/ROOT-5-129985767130955834
+ThreadIdentity : admin
+WindowsIdentity : NT AUTHORITY\SYSTEM
+Requested URL : http://localhost:8011/Sitefinity/Dialog/PropertyEditor?Id=31055463-a2db-4be0-837c-2818ac37ea53&MediaType=0&PageId=14e19386-a0a7-43a4-9c2d-56f2772d8f88&propertyValueCulture=&ParentPageId=1c5fa98c-9cb0-4a26-a6ea-5233d6b4bba8&hideSaveAllTranslations=true
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: OSMAK
+
+App Domain: /LM/W3SVC/6/ROOT-5-129985767130955834
+
+ProcessId: 11524
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:12144
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 11/28/2012 11:46:54 AM
+
+Message: HandlingInstanceID: 2eb3b6ba-64af-4d33-96d2-25821e97ca32
+An exception of type 'System.Collections.Generic.KeyNotFoundException' occurred and was caught.
+-----------------------------------------------------------------------------------------------
+11/28/2012 13:46:54
+Type : System.Collections.Generic.KeyNotFoundException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : The given key was not present in the dictionary.
+Source : Sitefinity.PowerTools
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : System.Web.UI.Control ResolveMvcDesigner(System.Type)
+HResult : -2146232969
+Stack Trace :    at Sitefinity.PowerTools.Mvc.ExtendedPropertyEditor.ResolveMvcDesigner(Type widgetType) in c:\PowerTools\Sitefinity.PowerTools\Sitefinity.PowerTools\Mvc\ExtendedPropertyEditor.cs:line 35
+   at Sitefinity.PowerTools.Mvc.ExtendedPropertyEditor.PrepareControlDesigner(ControlData ctrlData) in c:\PowerTools\Sitefinity.PowerTools\Sitefinity.PowerTools\Mvc\ExtendedPropertyEditor.cs:line 16
+   at Telerik.Sitefinity.Web.UI.PropertyEditor.InitializeControls(GenericContainer dialogContainer)
+   at Telerik.Sitefinity.Web.UI.DialogBase.CreateChildControls()
+   at System.Web.UI.Control.EnsureChildControls()
+   at System.Web.UI.WebControls.CompositeControl.get_Controls()
+   at Telerik.Sitefinity.Web.UI.PropertyEditor.OnInit(EventArgs e)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at Telerik.Sitefinity.Web.DialogRouteHandler.InitializeContent(Page handler, RequestContext requestContext)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+Additional Info:
+
+MachineName : OSMAK
+TimeStamp : 11/28/2012 11:46:54 AM
+FullName : Telerik.Sitefinity.Utilities, Version=5.2.3800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/6/ROOT-5-129985767130955834
+ThreadIdentity : admin
+WindowsIdentity : NT AUTHORITY\SYSTEM
+Requested URL : http://localhost:8011/Sitefinity/Dialog/PropertyEditor?Id=31055463-a2db-4be0-837c-2818ac37ea53&MediaType=0&PageId=14e19386-a0a7-43a4-9c2d-56f2772d8f88&propertyValueCulture=&ParentPageId=1c5fa98c-9cb0-4a26-a6ea-5233d6b4bba8&hideSaveAllTranslations=true
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: OSMAK
+
+App Domain: /LM/W3SVC/6/ROOT-5-129985767130955834
+
+ProcessId: 11524
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:11932
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 11/28/2012 11:48:31 AM
+
+Message: HandlingInstanceID: 1f4c68d0-aba0-45df-bd1e-d79e139e9491
+An exception of type 'System.Collections.Generic.KeyNotFoundException' occurred and was caught.
+-----------------------------------------------------------------------------------------------
+11/28/2012 13:48:31
+Type : System.Collections.Generic.KeyNotFoundException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : The given key was not present in the dictionary.
+Source : mscorlib
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : TValue get_Item(TKey)
+HResult : -2146232969
+Stack Trace :    at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at Sitefinity.PowerTools.Mvc.ExtendedPropertyEditor.ResolveMvcDesigner(Type widgetType) in c:\PowerTools\Sitefinity.PowerTools\Sitefinity.PowerTools\Mvc\ExtendedPropertyEditor.cs:line 30
+   at Sitefinity.PowerTools.Mvc.ExtendedPropertyEditor.PrepareControlDesigner(ControlData ctrlData) in c:\PowerTools\Sitefinity.PowerTools\Sitefinity.PowerTools\Mvc\ExtendedPropertyEditor.cs:line 16
+   at Telerik.Sitefinity.Web.UI.PropertyEditor.InitializeControls(GenericContainer dialogContainer)
+   at Telerik.Sitefinity.Web.UI.DialogBase.CreateChildControls()
+   at System.Web.UI.Control.EnsureChildControls()
+   at System.Web.UI.WebControls.CompositeControl.get_Controls()
+   at Telerik.Sitefinity.Web.UI.PropertyEditor.OnInit(EventArgs e)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at Telerik.Sitefinity.Web.DialogRouteHandler.InitializeContent(Page handler, RequestContext requestContext)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+Additional Info:
+
+MachineName : OSMAK
+TimeStamp : 11/28/2012 11:48:31 AM
+FullName : Telerik.Sitefinity.Utilities, Version=5.2.3800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/6/ROOT-6-129985768417205834
+ThreadIdentity : admin
+WindowsIdentity : NT AUTHORITY\SYSTEM
+Requested URL : http://localhost:8011/Sitefinity/Dialog/PropertyEditor?Id=31055463-a2db-4be0-837c-2818ac37ea53&MediaType=0&PageId=14e19386-a0a7-43a4-9c2d-56f2772d8f88&propertyValueCulture=&ParentPageId=1c5fa98c-9cb0-4a26-a6ea-5233d6b4bba8&hideSaveAllTranslations=true
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: OSMAK
+
+App Domain: /LM/W3SVC/6/ROOT-6-129985768417205834
+
+ProcessId: 11524
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:12728
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 11/28/2012 11:49:15 AM
+
+Message: HandlingInstanceID: 9430b2d4-1c84-4aca-9291-ad68f95e29d1
+An exception of type 'System.Collections.Generic.KeyNotFoundException' occurred and was caught.
+-----------------------------------------------------------------------------------------------
+11/28/2012 13:49:15
+Type : System.Collections.Generic.KeyNotFoundException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : The given key was not present in the dictionary.
+Source : mscorlib
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : TValue get_Item(TKey)
+HResult : -2146232969
+Stack Trace :    at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at Sitefinity.PowerTools.Mvc.ExtendedPropertyEditor.ResolveMvcDesigner(Type widgetType) in c:\PowerTools\Sitefinity.PowerTools\Sitefinity.PowerTools\Mvc\ExtendedPropertyEditor.cs:line 30
+   at Sitefinity.PowerTools.Mvc.ExtendedPropertyEditor.PrepareControlDesigner(ControlData ctrlData) in c:\PowerTools\Sitefinity.PowerTools\Sitefinity.PowerTools\Mvc\ExtendedPropertyEditor.cs:line 16
+   at Telerik.Sitefinity.Web.UI.PropertyEditor.InitializeControls(GenericContainer dialogContainer)
+   at Telerik.Sitefinity.Web.UI.DialogBase.CreateChildControls()
+   at System.Web.UI.Control.EnsureChildControls()
+   at System.Web.UI.WebControls.CompositeControl.get_Controls()
+   at Telerik.Sitefinity.Web.UI.PropertyEditor.OnInit(EventArgs e)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at Telerik.Sitefinity.Web.DialogRouteHandler.InitializeContent(Page handler, RequestContext requestContext)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+Additional Info:
+
+MachineName : OSMAK
+TimeStamp : 11/28/2012 11:49:15 AM
+FullName : Telerik.Sitefinity.Utilities, Version=5.2.3800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/6/ROOT-6-129985768417205834
+ThreadIdentity : admin
+WindowsIdentity : NT AUTHORITY\SYSTEM
+Requested URL : http://localhost:8011/Sitefinity/Dialog/PropertyEditor?Id=31055463-a2db-4be0-837c-2818ac37ea53&MediaType=0&PageId=14e19386-a0a7-43a4-9c2d-56f2772d8f88&propertyValueCulture=&ParentPageId=1c5fa98c-9cb0-4a26-a6ea-5233d6b4bba8&hideSaveAllTranslations=true
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: OSMAK
+
+App Domain: /LM/W3SVC/6/ROOT-6-129985768417205834
+
+ProcessId: 11524
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:10616
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 11/28/2012 12:11:01 PM
+
+Message: HandlingInstanceID: e520d1d6-1f62-4bb9-a311-69228ae29e55
+An exception of type 'System.Collections.Generic.KeyNotFoundException' occurred and was caught.
+-----------------------------------------------------------------------------------------------
+11/28/2012 14:11:01
+Type : System.Collections.Generic.KeyNotFoundException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : The given key was not present in the dictionary.
+Source : mscorlib
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : TValue get_Item(TKey)
+HResult : -2146232969
+Stack Trace :    at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at Sitefinity.PowerTools.Mvc.ExtendedPropertyEditor.ResolveMvcDesigner(Type widgetType) in c:\PowerTools\Sitefinity.PowerTools\Sitefinity.PowerTools\Mvc\ExtendedPropertyEditor.cs:line 40
+   at Sitefinity.PowerTools.Mvc.ExtendedPropertyEditor.PrepareControlDesigner(ControlData ctrlData) in c:\PowerTools\Sitefinity.PowerTools\Sitefinity.PowerTools\Mvc\ExtendedPropertyEditor.cs:line 25
+   at Telerik.Sitefinity.Web.UI.PropertyEditor.InitializeControls(GenericContainer dialogContainer)
+   at Telerik.Sitefinity.Web.UI.DialogBase.CreateChildControls()
+   at System.Web.UI.Control.EnsureChildControls()
+   at System.Web.UI.WebControls.CompositeControl.get_Controls()
+   at Telerik.Sitefinity.Web.UI.PropertyEditor.OnInit(EventArgs e)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at Telerik.Sitefinity.Web.DialogRouteHandler.InitializeContent(Page handler, RequestContext requestContext)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+Additional Info:
+
+MachineName : OSMAK
+TimeStamp : 11/28/2012 12:11:01 PM
+FullName : Telerik.Sitefinity.Utilities, Version=5.2.3800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/6/ROOT-9-129985780529425834
+ThreadIdentity : admin
+WindowsIdentity : NT AUTHORITY\SYSTEM
+Requested URL : http://localhost:8011/Sitefinity/Dialog/PropertyEditor?Id=480dfabc-bb24-4095-a636-0d07e594782b&MediaType=0&PageId=61caae23-e44c-49ff-87fc-db9af87b0e1c&propertyValueCulture=&ParentPageId=9704120a-d1fd-4ae3-b0e8-096839e38994&hideSaveAllTranslations=true
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: OSMAK
+
+App Domain: /LM/W3SVC/6/ROOT-9-129985780529425834
+
+ProcessId: 11524
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:11004
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 11/28/2012 2:00:37 PM
+
+Message: HandlingInstanceID: bf0cbff8-baec-48b9-bebf-eb9f5a6ac96b
+An exception of type 'System.NullReferenceException' occurred and was caught.
+-----------------------------------------------------------------------------
+11/28/2012 16:00:37
+Type : System.NullReferenceException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Object reference not set to an instance of an object.
+Source : Sitefinity.PowerTools
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void PrepareControlDesigner(Telerik.Sitefinity.Pages.Model.ControlData)
+HResult : -2147467261
+Stack Trace :    at Sitefinity.PowerTools.Mvc.ExtendedPropertyEditor.PrepareControlDesigner(ControlData ctrlData) in c:\PowerTools\Sitefinity.PowerTools\Sitefinity.PowerTools\Mvc\ExtendedPropertyEditor.cs:line 45
+   at Telerik.Sitefinity.Web.UI.PropertyEditor.InitializeControls(GenericContainer dialogContainer)
+   at Telerik.Sitefinity.Web.UI.SimpleView.CreateChildControls()
+   at Telerik.Sitefinity.Web.UI.DialogBase.CreateChildControls()
+   at System.Web.UI.Control.EnsureChildControls()
+   at System.Web.UI.WebControls.CompositeControl.get_Controls()
+   at Telerik.Sitefinity.Web.UI.PropertyEditor.OnInit(EventArgs e)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at Telerik.Sitefinity.Web.DialogRouteHandler.InitializeContent(Page handler, RequestContext requestContext)
+   at Telerik.Sitefinity.Web.RouteHandlerBase.Handler_Load(Object sender, EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+Additional Info:
+
+MachineName : OSMAK
+TimeStamp : 11/28/2012 2:00:37 PM
+FullName : Telerik.Sitefinity.Utilities, Version=5.2.3800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/6/ROOT-4-129985847595025834
+ThreadIdentity : admin
+WindowsIdentity : NT AUTHORITY\SYSTEM
+Requested URL : http://localhost:8011/Sitefinity/Dialog/PropertyEditor?Id=201cc4a1-c46f-417a-b84e-65919db042f7&MediaType=0&PageId=61caae23-e44c-49ff-87fc-db9af87b0e1c&propertyValueCulture=&ParentPageId=9704120a-d1fd-4ae3-b0e8-096839e38994&hideSaveAllTranslations=true
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: OSMAK
+
+App Domain: /LM/W3SVC/6/ROOT-4-129985847595025834
+
+ProcessId: 12176
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:8540
+
+Extended Properties: 
+----------------------------------------

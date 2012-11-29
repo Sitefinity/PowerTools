@@ -1,0 +1,4 @@
+<%@ ServiceHost Language="C#"
+                Debug="false"
+                Service="Telerik.Sitefinity.Modules.Catalog.Web.Services.ProductAttributeService"
+                Factory="Telerik.Sitefinity.Web.Services.WcfHostFactory" %>

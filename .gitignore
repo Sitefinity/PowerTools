@@ -9,6 +9,7 @@
 *.suo
 *.user
 *.sln.docstates
+*.lic
 
 # Build results
 [Dd]ebug/

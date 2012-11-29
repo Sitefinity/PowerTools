@@ -1,0 +1,12 @@
+﻿.nav-pills > .active > a, .nav-pills > .active > a:hover {
+    background-color: #666;
+    color: #FFFFFF;
+}
+
+#sortable-list li
+{
+    margin:5px 0;
+    padding:5px;
+    border-top:1px dotted #CCC;
+    cursor:move;
+}
