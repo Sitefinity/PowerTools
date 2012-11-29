@@ -18,6 +18,9 @@
         $("input:radio[name=listType][value=" + newValue + "]").attr("checked", "checked");
       });
 
+      $("#list-title").val(this.model.get("listTitle"));
+      $("input:radio[name=listType][value=" + this.model.get("listType") + "]").attr("checked", "checked");
+
     },
 
     events: {
