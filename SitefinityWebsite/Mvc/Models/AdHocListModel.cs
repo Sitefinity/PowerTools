@@ -17,7 +17,20 @@ namespace SitefinityWebApp.Mvc.Models
             set;
         }
 
+        public string[] ListItems
+        {
+            get
+            {
+                return this.listItems;
+            }
+            set
+            {
+                this.listItems = value;
+            }
+        }
+
         public const string NumbersListType = "numbers";
         public const string BulletsListType = "bullets";
+        private string[] listItems = new string[0];
     }
 }

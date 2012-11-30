@@ -19,16 +19,11 @@
     <div class="tab-content">
         <div class="tab-pane active" id="list-items" style="height:300px;">
             <ul id="sortable-list">
-                <li><button class="btn btn-mini"><i class="icon-pencil"></i></button> <button class="btn btn-mini"><i class="icon-remove-circle"></i></button> List item 1</li>
-                <li><button class="btn btn-mini"><i class="icon-pencil"></i></button> <button class="btn btn-mini"><i class="icon-remove-circle"></i></button> List item 2</li>
-                <li><button class="btn btn-mini"><i class="icon-pencil"></i></button> <button class="btn btn-mini"><i class="icon-remove-circle"></i></button> List item 3</li>
-                <li>
-                    <div class="form-inline">
-                        <input type="text" name="newListItem" id="newListItem" placeholder="Enter new list item..." />
-                        <button class="btn">Add</button>
-                    </div>
-                </li>
             </ul>
+            <div class="form-inline">
+                <input type="text" name="newListItem" id="newListItem" placeholder="Enter new list item..." />
+                <button id="add-list-item" class="btn">Add</button>
+            </div>
         </div>
 
         <div class="tab-pane" id="list-settings" style="height:300px;">
@@ -52,3 +47,7 @@
     </div>
 
 </div>
+
+<script id="list-item-template" type="text/template">
+    <button class="btn btn-mini"><i class="icon-pencil"></i></button> <button class="btn btn-mini"><i class="icon-remove-circle"></i></button> <%= attributes.text %>
+</script>

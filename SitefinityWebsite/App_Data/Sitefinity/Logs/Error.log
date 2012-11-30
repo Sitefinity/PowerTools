@@ -1,30 +1,287 @@
 ----------------------------------------
-Timestamp: 11/29/2012 12:46:44 PM
+Timestamp: 11/30/2012 2:48:07 PM
 
-Message: HandlingInstanceID: 45818fcf-d113-47cb-b0a0-6a2d7fc741f1
-An exception of type 'System.Web.HttpException' occurred and was caught.
-------------------------------------------------------------------------
-11/29/2012 14:46:44
-Type : System.Web.HttpException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
-Message : The file '/MVC/Views/AdHocList/Index.cshtml' does not exist.
-Source : System.Web
+Message: HandlingInstanceID: 706b69ba-5cbb-49da-9062-62010fcb3046
+An exception of type 'System.Runtime.Serialization.SerializationException' occurred and was caught.
+---------------------------------------------------------------------------------------------------
+11/30/2012 16:48:07
+Type : System.Runtime.Serialization.SerializationException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : There was an error deserializing the object of type Telerik.Sitefinity.Modules.Pages.Web.Services.Model.WcfControlProperty[]. End element 'PropertyValue' from namespace '' expected. Found element 'item' from namespace ''.
+Source : System.Runtime.Serialization
 Help link : 
-WebEventCode : 0
-ErrorCode : -2147467259
 Data : System.Collections.ListDictionaryInternal
-TargetSite : System.Web.Compilation.BuildResult GetVPathBuildResultInternal(System.Web.VirtualPath, Boolean, Boolean, Boolean, Boolean, Boolean)
-HResult : -2147467259
-Stack Trace :    at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
-   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
-   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
-   at System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
-   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
-   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
-   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
-   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
-   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
-   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
-   at Telerik.Sitefinity.Mvc.ControllerWrapper.Execute()
+TargetSite : System.Object ReadObjectHandleExceptions(System.Runtime.Serialization.XmlReaderDelegator, Boolean, System.Runtime.Serialization.DataContractResolver)
+HResult : -2146233076
+Stack Trace :    at System.Runtime.Serialization.XmlObjectSerializer.ReadObjectHandleExceptions(XmlReaderDelegator reader, Boolean verifyObjectName, DataContractResolver dataContractResolver)
+   at System.Runtime.Serialization.Json.DataContractJsonSerializer.ReadObject(XmlDictionaryReader reader, Boolean verifyObjectName)
+   at System.ServiceModel.Dispatcher.SingleBodyParameterDataContractMessageFormatter.ReadObject(Message message)
+   at System.ServiceModel.Dispatcher.SingleBodyParameterMessageFormatter.DeserializeRequest(Message message, Object[] parameters)
+   at System.ServiceModel.Dispatcher.DemultiplexingDispatchMessageFormatter.DeserializeRequest(Message message, Object[] parameters)
+   at System.ServiceModel.Dispatcher.UriTemplateDispatchFormatter.DeserializeRequest(Message message, Object[] parameters)
+   at System.ServiceModel.Dispatcher.DispatchOperationRuntime.DeserializeInputs(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeBegin(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage5(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage31(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet)
+
+Additional Info:
+
+MachineName : OSMAK
+TimeStamp : 11/30/2012 2:48:07 PM
+FullName : Telerik.Sitefinity.Utilities, Version=5.2.3800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/6/ROOT-1-129987604319178231
+ThreadIdentity : 
+WindowsIdentity : NT AUTHORITY\SYSTEM
+Requested URL : http://localhost:8011/Sitefinity/Services/Pages/ControlPropertyService.svc/batch/566b307f-5d85-40ac-a944-d534e257e5cd/?pageId=da20a580-8224-4f73-b7e2-1dfd2ce6bf52&mediaType=Page&checkLiveVersion=False&upgradePageVersion=False&propertyLocalization=0&isOpenedByBrowseAndEdit=false
+	Inner Exception
+	---------------
+	Type : System.Xml.XmlException, System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+	Message : End element 'PropertyValue' from namespace '' expected. Found element 'item' from namespace ''.
+	Source : System.Runtime.Serialization
+	Help link : 
+	LineNumber : 0
+	LinePosition : 0
+	SourceUri : 
+	Data : System.Collections.ListDictionaryInternal
+	TargetSite : Void ThrowXmlException(System.Xml.XmlDictionaryReader, System.String, System.String, System.String, System.String)
+	HResult : -2146232000
+	Stack Trace :    at System.Xml.XmlExceptionHelper.ThrowXmlException(XmlDictionaryReader reader, String res, String arg1, String arg2, String arg3)
+	   at System.Xml.XmlBaseReader.ReadEndElement()
+	   at System.Xml.XmlBaseReader.ReadElementContentAsString()
+	   at ReadWcfControlPropertyFromJson(XmlReaderDelegator , XmlObjectSerializerReadContextComplexJson , XmlDictionaryString , XmlDictionaryString[] )
+	   at System.Runtime.Serialization.Json.JsonClassDataContract.ReadJsonValueCore(XmlReaderDelegator jsonReader, XmlObjectSerializerReadContextComplexJson context)
+	   at System.Runtime.Serialization.Json.JsonDataContract.ReadJsonValue(XmlReaderDelegator jsonReader, XmlObjectSerializerReadContextComplexJson context)
+	   at System.Runtime.Serialization.XmlObjectSerializerReadContext.InternalDeserialize(XmlReaderDelegator reader, String name, String ns, Type declaredType, DataContract& dataContract)
+	   at System.Runtime.Serialization.XmlObjectSerializerReadContext.InternalDeserialize(XmlReaderDelegator xmlReader, Int32 id, RuntimeTypeHandle declaredTypeHandle, String name, String ns)
+	   at ReadArrayOfWcfControlPropertyFromJson(XmlReaderDelegator , XmlObjectSerializerReadContextComplexJson , XmlDictionaryString , XmlDictionaryString , CollectionDataContract )
+	   at System.Runtime.Serialization.Json.JsonCollectionDataContract.ReadJsonValueCore(XmlReaderDelegator jsonReader, XmlObjectSerializerReadContextComplexJson context)
+	   at System.Runtime.Serialization.Json.JsonDataContract.ReadJsonValue(XmlReaderDelegator jsonReader, XmlObjectSerializerReadContextComplexJson context)
+	   at System.Runtime.Serialization.XmlObjectSerializerReadContext.InternalDeserialize(XmlReaderDelegator reader, String name, String ns, Type declaredType, DataContract& dataContract)
+	   at System.Runtime.Serialization.XmlObjectSerializerReadContext.InternalDeserialize(XmlReaderDelegator xmlReader, Type declaredType, DataContract dataContract, String name, String ns)
+	   at System.Runtime.Serialization.Json.DataContractJsonSerializer.InternalReadObject(XmlReaderDelegator xmlReader, Boolean verifyObjectName)
+	   at System.Runtime.Serialization.XmlObjectSerializer.ReadObjectHandleExceptions(XmlReaderDelegator reader, Boolean verifyObjectName, DataContractResolver dataContractResolver)
+
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: OSMAK
+
+App Domain: /LM/W3SVC/6/ROOT-1-129987604319178231
+
+ProcessId: 6032
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:3052
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 11/30/2012 2:55:32 PM
+
+Message: HandlingInstanceID: c1684e33-eab3-4897-aa96-fb70ddeb1c18
+An exception of type 'System.Runtime.Serialization.SerializationException' occurred and was caught.
+---------------------------------------------------------------------------------------------------
+11/30/2012 16:55:32
+Type : System.Runtime.Serialization.SerializationException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : There was an error deserializing the object of type Telerik.Sitefinity.Modules.Pages.Web.Services.Model.WcfControlProperty[]. End element 'PropertyValue' from namespace '' expected. Found element 'item' from namespace ''.
+Source : System.Runtime.Serialization
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : System.Object ReadObjectHandleExceptions(System.Runtime.Serialization.XmlReaderDelegator, Boolean, System.Runtime.Serialization.DataContractResolver)
+HResult : -2146233076
+Stack Trace :    at System.Runtime.Serialization.XmlObjectSerializer.ReadObjectHandleExceptions(XmlReaderDelegator reader, Boolean verifyObjectName, DataContractResolver dataContractResolver)
+   at System.Runtime.Serialization.Json.DataContractJsonSerializer.ReadObject(XmlDictionaryReader reader, Boolean verifyObjectName)
+   at System.ServiceModel.Dispatcher.SingleBodyParameterDataContractMessageFormatter.ReadObject(Message message)
+   at System.ServiceModel.Dispatcher.SingleBodyParameterMessageFormatter.DeserializeRequest(Message message, Object[] parameters)
+   at System.ServiceModel.Dispatcher.DemultiplexingDispatchMessageFormatter.DeserializeRequest(Message message, Object[] parameters)
+   at System.ServiceModel.Dispatcher.UriTemplateDispatchFormatter.DeserializeRequest(Message message, Object[] parameters)
+   at System.ServiceModel.Dispatcher.DispatchOperationRuntime.DeserializeInputs(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeBegin(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage5(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage31(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet)
+
+Additional Info:
+
+MachineName : OSMAK
+TimeStamp : 11/30/2012 2:55:32 PM
+FullName : Telerik.Sitefinity.Utilities, Version=5.2.3800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/6/ROOT-1-129987604319178231
+ThreadIdentity : 
+WindowsIdentity : NT AUTHORITY\SYSTEM
+Requested URL : http://localhost:8011/Sitefinity/Services/Pages/ControlPropertyService.svc/batch/566b307f-5d85-40ac-a944-d534e257e5cd/?pageId=da20a580-8224-4f73-b7e2-1dfd2ce6bf52&mediaType=Page&checkLiveVersion=False&upgradePageVersion=False&propertyLocalization=0&isOpenedByBrowseAndEdit=false
+	Inner Exception
+	---------------
+	Type : System.Xml.XmlException, System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+	Message : End element 'PropertyValue' from namespace '' expected. Found element 'item' from namespace ''.
+	Source : System.Runtime.Serialization
+	Help link : 
+	LineNumber : 0
+	LinePosition : 0
+	SourceUri : 
+	Data : System.Collections.ListDictionaryInternal
+	TargetSite : Void ThrowXmlException(System.Xml.XmlDictionaryReader, System.String, System.String, System.String, System.String)
+	HResult : -2146232000
+	Stack Trace :    at System.Xml.XmlExceptionHelper.ThrowXmlException(XmlDictionaryReader reader, String res, String arg1, String arg2, String arg3)
+	   at System.Xml.XmlBaseReader.ReadEndElement()
+	   at System.Xml.XmlBaseReader.ReadElementContentAsString()
+	   at ReadWcfControlPropertyFromJson(XmlReaderDelegator , XmlObjectSerializerReadContextComplexJson , XmlDictionaryString , XmlDictionaryString[] )
+	   at System.Runtime.Serialization.Json.JsonClassDataContract.ReadJsonValueCore(XmlReaderDelegator jsonReader, XmlObjectSerializerReadContextComplexJson context)
+	   at System.Runtime.Serialization.Json.JsonDataContract.ReadJsonValue(XmlReaderDelegator jsonReader, XmlObjectSerializerReadContextComplexJson context)
+	   at System.Runtime.Serialization.XmlObjectSerializerReadContext.InternalDeserialize(XmlReaderDelegator reader, String name, String ns, Type declaredType, DataContract& dataContract)
+	   at System.Runtime.Serialization.XmlObjectSerializerReadContext.InternalDeserialize(XmlReaderDelegator xmlReader, Int32 id, RuntimeTypeHandle declaredTypeHandle, String name, String ns)
+	   at ReadArrayOfWcfControlPropertyFromJson(XmlReaderDelegator , XmlObjectSerializerReadContextComplexJson , XmlDictionaryString , XmlDictionaryString , CollectionDataContract )
+	   at System.Runtime.Serialization.Json.JsonCollectionDataContract.ReadJsonValueCore(XmlReaderDelegator jsonReader, XmlObjectSerializerReadContextComplexJson context)
+	   at System.Runtime.Serialization.Json.JsonDataContract.ReadJsonValue(XmlReaderDelegator jsonReader, XmlObjectSerializerReadContextComplexJson context)
+	   at System.Runtime.Serialization.XmlObjectSerializerReadContext.InternalDeserialize(XmlReaderDelegator reader, String name, String ns, Type declaredType, DataContract& dataContract)
+	   at System.Runtime.Serialization.XmlObjectSerializerReadContext.InternalDeserialize(XmlReaderDelegator xmlReader, Type declaredType, DataContract dataContract, String name, String ns)
+	   at System.Runtime.Serialization.Json.DataContractJsonSerializer.InternalReadObject(XmlReaderDelegator xmlReader, Boolean verifyObjectName)
+	   at System.Runtime.Serialization.XmlObjectSerializer.ReadObjectHandleExceptions(XmlReaderDelegator reader, Boolean verifyObjectName, DataContractResolver dataContractResolver)
+
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: OSMAK
+
+App Domain: /LM/W3SVC/6/ROOT-1-129987604319178231
+
+ProcessId: 6032
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:2848
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 11/30/2012 2:55:56 PM
+
+Message: HandlingInstanceID: c08101bf-e970-4912-a070-76729501a8b7
+An exception of type 'System.Runtime.Serialization.SerializationException' occurred and was caught.
+---------------------------------------------------------------------------------------------------
+11/30/2012 16:55:56
+Type : System.Runtime.Serialization.SerializationException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : There was an error deserializing the object of type Telerik.Sitefinity.Modules.Pages.Web.Services.Model.WcfControlProperty[]. End element 'PropertyValue' from namespace '' expected. Found element 'item' from namespace ''.
+Source : System.Runtime.Serialization
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : System.Object ReadObjectHandleExceptions(System.Runtime.Serialization.XmlReaderDelegator, Boolean, System.Runtime.Serialization.DataContractResolver)
+HResult : -2146233076
+Stack Trace :    at System.Runtime.Serialization.XmlObjectSerializer.ReadObjectHandleExceptions(XmlReaderDelegator reader, Boolean verifyObjectName, DataContractResolver dataContractResolver)
+   at System.Runtime.Serialization.Json.DataContractJsonSerializer.ReadObject(XmlDictionaryReader reader, Boolean verifyObjectName)
+   at System.ServiceModel.Dispatcher.SingleBodyParameterDataContractMessageFormatter.ReadObject(Message message)
+   at System.ServiceModel.Dispatcher.SingleBodyParameterMessageFormatter.DeserializeRequest(Message message, Object[] parameters)
+   at System.ServiceModel.Dispatcher.DemultiplexingDispatchMessageFormatter.DeserializeRequest(Message message, Object[] parameters)
+   at System.ServiceModel.Dispatcher.UriTemplateDispatchFormatter.DeserializeRequest(Message message, Object[] parameters)
+   at System.ServiceModel.Dispatcher.DispatchOperationRuntime.DeserializeInputs(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeBegin(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage5(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage31(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet)
+
+Additional Info:
+
+MachineName : OSMAK
+TimeStamp : 11/30/2012 2:55:56 PM
+FullName : Telerik.Sitefinity.Utilities, Version=5.2.3800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/6/ROOT-1-129987604319178231
+ThreadIdentity : 
+WindowsIdentity : NT AUTHORITY\SYSTEM
+Requested URL : http://localhost:8011/Sitefinity/Services/Pages/ControlPropertyService.svc/batch/566b307f-5d85-40ac-a944-d534e257e5cd/?pageId=da20a580-8224-4f73-b7e2-1dfd2ce6bf52&mediaType=Page&checkLiveVersion=False&upgradePageVersion=False&propertyLocalization=0&isOpenedByBrowseAndEdit=false
+	Inner Exception
+	---------------
+	Type : System.Xml.XmlException, System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+	Message : End element 'PropertyValue' from namespace '' expected. Found element 'item' from namespace ''.
+	Source : System.Runtime.Serialization
+	Help link : 
+	LineNumber : 0
+	LinePosition : 0
+	SourceUri : 
+	Data : System.Collections.ListDictionaryInternal
+	TargetSite : Void ThrowXmlException(System.Xml.XmlDictionaryReader, System.String, System.String, System.String, System.String)
+	HResult : -2146232000
+	Stack Trace :    at System.Xml.XmlExceptionHelper.ThrowXmlException(XmlDictionaryReader reader, String res, String arg1, String arg2, String arg3)
+	   at System.Xml.XmlBaseReader.ReadEndElement()
+	   at System.Xml.XmlBaseReader.ReadElementContentAsString()
+	   at ReadWcfControlPropertyFromJson(XmlReaderDelegator , XmlObjectSerializerReadContextComplexJson , XmlDictionaryString , XmlDictionaryString[] )
+	   at System.Runtime.Serialization.Json.JsonClassDataContract.ReadJsonValueCore(XmlReaderDelegator jsonReader, XmlObjectSerializerReadContextComplexJson context)
+	   at System.Runtime.Serialization.Json.JsonDataContract.ReadJsonValue(XmlReaderDelegator jsonReader, XmlObjectSerializerReadContextComplexJson context)
+	   at System.Runtime.Serialization.XmlObjectSerializerReadContext.InternalDeserialize(XmlReaderDelegator reader, String name, String ns, Type declaredType, DataContract& dataContract)
+	   at System.Runtime.Serialization.XmlObjectSerializerReadContext.InternalDeserialize(XmlReaderDelegator xmlReader, Int32 id, RuntimeTypeHandle declaredTypeHandle, String name, String ns)
+	   at ReadArrayOfWcfControlPropertyFromJson(XmlReaderDelegator , XmlObjectSerializerReadContextComplexJson , XmlDictionaryString , XmlDictionaryString , CollectionDataContract )
+	   at System.Runtime.Serialization.Json.JsonCollectionDataContract.ReadJsonValueCore(XmlReaderDelegator jsonReader, XmlObjectSerializerReadContextComplexJson context)
+	   at System.Runtime.Serialization.Json.JsonDataContract.ReadJsonValue(XmlReaderDelegator jsonReader, XmlObjectSerializerReadContextComplexJson context)
+	   at System.Runtime.Serialization.XmlObjectSerializerReadContext.InternalDeserialize(XmlReaderDelegator reader, String name, String ns, Type declaredType, DataContract& dataContract)
+	   at System.Runtime.Serialization.XmlObjectSerializerReadContext.InternalDeserialize(XmlReaderDelegator xmlReader, Type declaredType, DataContract dataContract, String name, String ns)
+	   at System.Runtime.Serialization.Json.DataContractJsonSerializer.InternalReadObject(XmlReaderDelegator xmlReader, Boolean verifyObjectName)
+	   at System.Runtime.Serialization.XmlObjectSerializer.ReadObjectHandleExceptions(XmlReaderDelegator reader, Boolean verifyObjectName, DataContractResolver dataContractResolver)
+
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: OSMAK
+
+App Domain: /LM/W3SVC/6/ROOT-1-129987604319178231
+
+ProcessId: 6032
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:2848
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 11/30/2012 3:00:51 PM
+
+Message: HandlingInstanceID: 58212323-152d-4a5a-a8c0-7f9a526855d9
+An exception of type 'System.InvalidCastException' occurred and was caught.
+---------------------------------------------------------------------------
+11/30/2012 17:00:51
+Type : System.InvalidCastException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Invalid cast from 'System.String' to 'System.String[]'.
+Source : mscorlib
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : System.Object DefaultToType(System.IConvertible, System.Type, System.IFormatProvider)
+HResult : -2147467262
+Stack Trace :    at System.Convert.DefaultToType(IConvertible value, Type targetType, IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at Telerik.Sitefinity.Mvc.Proxy.MvcControllerProxy.GetCastValue(PropertyDescriptor propDesc)
    at Telerik.Sitefinity.Mvc.Proxy.MvcControllerProxy.ExecuteController()
    at System.Web.UI.Control.PreRenderRecursiveInternal()
    at System.Web.UI.Control.PreRenderRecursiveInternal()
@@ -34,9 +291,9 @@ Stack Trace :    at System.Web.Compilation.BuildManager.GetVPathBuildResultInter
 Additional Info:
 
 MachineName : OSMAK
-TimeStamp : 11/29/2012 12:46:44 PM
+TimeStamp : 11/30/2012 3:00:51 PM
 FullName : Telerik.Sitefinity.Utilities, Version=5.2.3800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
-AppDomainName : /LM/W3SVC/6/ROOT-13-129986666836800400
+AppDomainName : /LM/W3SVC/6/ROOT-1-129987604319178231
 ThreadIdentity : admin
 WindowsIdentity : NT AUTHORITY\SYSTEM
 Requested URL : http://localhost:8011/Sitefinity/Services/Pages/ZoneEditorService.svc/Control/
@@ -54,69 +311,50 @@ Title:Enterprise Library Exception Handling
 
 Machine: OSMAK
 
-App Domain: /LM/W3SVC/6/ROOT-13-129986666836800400
+App Domain: /LM/W3SVC/6/ROOT-1-129987604319178231
 
-ProcessId: 8496
+ProcessId: 6032
 
 Process Name: c:\windows\system32\inetsrv\w3wp.exe
 
 Thread Name: 
 
-Win32 ThreadId:9832
+Win32 ThreadId:1848
 
 Extended Properties: 
 ----------------------------------------
 ----------------------------------------
-Timestamp: 11/29/2012 12:46:49 PM
+Timestamp: 11/30/2012 3:01:16 PM
 
-Message: HandlingInstanceID: 34304c1c-026c-4224-a3b1-5fef146056ba
-An exception of type 'System.Web.HttpException' occurred and was caught.
-------------------------------------------------------------------------
-11/29/2012 14:46:49
-Type : System.Web.HttpException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
-Message : The file '/MVC/Views/AdHocListDesigner/Index.cshtml' does not exist.
-Source : System.Web
+Message: HandlingInstanceID: 7cf6e241-2e1a-4eb7-addf-8a1ed33d2f4f
+An exception of type 'System.InvalidCastException' occurred and was caught.
+---------------------------------------------------------------------------
+11/30/2012 17:01:16
+Type : System.InvalidCastException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Invalid cast from 'System.String' to 'System.String[]'.
+Source : mscorlib
 Help link : 
-WebEventCode : 0
-ErrorCode : -2147467259
 Data : System.Collections.ListDictionaryInternal
-TargetSite : System.Web.Compilation.BuildResult GetVPathBuildResultInternal(System.Web.VirtualPath, Boolean, Boolean, Boolean, Boolean, Boolean)
-HResult : -2147467259
-Stack Trace :    at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
-   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
-   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
-   at System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
-   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
-   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
-   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
-   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
-   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
-   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
-   at Telerik.Sitefinity.Mvc.ControllerWrapper.Execute()
+TargetSite : System.Object DefaultToType(System.IConvertible, System.Type, System.IFormatProvider)
+HResult : -2147467262
+Stack Trace :    at System.Convert.DefaultToType(IConvertible value, Type targetType, IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at Telerik.Sitefinity.Mvc.Proxy.MvcControllerProxy.GetCastValue(PropertyDescriptor propDesc)
    at Telerik.Sitefinity.Mvc.Proxy.MvcControllerProxy.ExecuteController()
-   at Telerik.Sitefinity.Mvc.Proxy.MvcControllerProxy.Render(HtmlTextWriter writer)
-   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
-   at Sitefinity.PowerTools.Mvc.ExtendedPropertyEditor.PrepareControlDesigner(ControlData ctrlData) in c:\PowerTools\PowerTools\Sitefinity.PowerTools\Mvc\ExtendedPropertyEditor.cs:line 37
-   at Telerik.Sitefinity.Web.UI.PropertyEditor.InitializeControls(GenericContainer dialogContainer)
-   at Telerik.Sitefinity.Web.UI.DialogBase.CreateChildControls()
-   at System.Web.UI.Control.EnsureChildControls()
-   at System.Web.UI.WebControls.CompositeControl.get_Controls()
-   at Telerik.Sitefinity.Web.UI.PropertyEditor.OnInit(EventArgs e)
-   at System.Web.UI.Control.InitRecursive(Control namingContainer)
-   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
-   at Telerik.Sitefinity.Web.DialogRouteHandler.InitializeContent(Page handler, RequestContext requestContext)
-   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
    at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
 
 Additional Info:
 
 MachineName : OSMAK
-TimeStamp : 11/29/2012 12:46:49 PM
+TimeStamp : 11/30/2012 3:01:16 PM
 FullName : Telerik.Sitefinity.Utilities, Version=5.2.3800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
-AppDomainName : /LM/W3SVC/6/ROOT-13-129986666836800400
+AppDomainName : /LM/W3SVC/6/ROOT-1-129987604319178231
 ThreadIdentity : admin
 WindowsIdentity : NT AUTHORITY\SYSTEM
-Requested URL : http://localhost:8011/Sitefinity/Dialog/PropertyEditor?Id=87edbb06-01c6-4bf8-ab6c-ecedcf491b4f&MediaType=0&PageId=0b8f9b35-ee3a-45d7-bc2b-cc2b95bd9437&propertyValueCulture=&ParentPageId=10851cf6-254f-4f03-9b72-f09ab71cc2c2&hideSaveAllTranslations=true
+Requested URL : http://localhost:8011/Sitefinity/Services/Pages/ZoneEditorService.svc/Control/
 
 
 Category: ErrorLog
@@ -131,109 +369,46 @@ Title:Enterprise Library Exception Handling
 
 Machine: OSMAK
 
-App Domain: /LM/W3SVC/6/ROOT-13-129986666836800400
+App Domain: /LM/W3SVC/6/ROOT-1-129987604319178231
 
-ProcessId: 8496
-
-Process Name: c:\windows\system32\inetsrv\w3wp.exe
-
-Thread Name: 
-
-Win32 ThreadId:6748
-
-Extended Properties: 
-----------------------------------------
-----------------------------------------
-Timestamp: 11/29/2012 12:47:31 PM
-
-Message: HandlingInstanceID: 8d01b269-76c2-4f38-a720-f05a5026f1d7
-An exception of type 'System.Security.Cryptography.CryptographicException' occurred and was caught.
----------------------------------------------------------------------------------------------------
-11/29/2012 14:47:31
-Type : System.Security.Cryptography.CryptographicException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-Message : Bad Data.
-
-Source : mscorlib
-Help link : 
-Data : System.Collections.ListDictionaryInternal
-TargetSite : Void ThrowCryptographicException(Int32)
-HResult : -2146893819
-Stack Trace :    at System.Security.Cryptography.CryptographicException.ThrowCryptographicException(Int32 hr)
-   at System.Security.Cryptography.Utils._DecryptData(SafeKeyHandle hKey, Byte[] data, Int32 ib, Int32 cb, Byte[]& outputBuffer, Int32 outputOffset, PaddingMode PaddingMode, Boolean fDone)
-   at System.Security.Cryptography.CryptoAPITransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
-   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
-   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
-   at System.IO.Stream.Close()
-   at Telerik.Sitefinity.Security.SecurityManager.DecryptData(Byte[] data)
-   at Microsoft.IdentityModel.Tokens.SessionSecurityTokenHandler.ApplyTransforms(Byte[] cookie, Boolean outbound)
-   at Microsoft.IdentityModel.Tokens.SessionSecurityTokenHandler.ReadToken(XmlReader reader, SecurityTokenResolver tokenResolver)
-   at Microsoft.IdentityModel.Tokens.SessionSecurityTokenHandler.ReadToken(Byte[] token, SecurityTokenResolver tokenResolver)
-   at Telerik.Sitefinity.Security.Claims.SitefinitySessionAuthenticationModule.ReadToken(Byte[] sessionCookie)
-
-Additional Info:
-
-MachineName : OSMAK
-TimeStamp : 11/29/2012 12:47:31 PM
-FullName : Telerik.Sitefinity.Utilities, Version=5.2.3800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
-AppDomainName : /LM/W3SVC/6/ROOT-14-129986668401460400
-ThreadIdentity : 
-WindowsIdentity : NT AUTHORITY\SYSTEM
-Requested URL : http://localhost:8011/WebResource.axd?d=e1tBz40dghUg8Nw4s0TIqDdjFyi5cjfIExpcS-QBFoyIEdw5UPP79iH2OAamL9fZpY9IhM94TsQToQr1fDUtvoG2McEFEB_djMwvpHVY07NxNVIMNIyT1m7jbNQGz_iCPs2G5-mVWo3QtWZdlD7ogOw6NK1vYjmd7MrR5pDTZKT424Z1v9pO20dq1aokpMgC0&t=634882427240000000
-
-
-Category: ErrorLog
-
-Priority: 0
-
-EventId: 9010
-
-Severity: Warning
-
-Title:Enterprise Library Exception Handling
-
-Machine: OSMAK
-
-App Domain: /LM/W3SVC/6/ROOT-14-129986668401460400
-
-ProcessId: 8496
+ProcessId: 6032
 
 Process Name: c:\windows\system32\inetsrv\w3wp.exe
 
 Thread Name: 
 
-Win32 ThreadId:3012
+Win32 ThreadId:1848
 
 Extended Properties: 
 ----------------------------------------
 ----------------------------------------
-Timestamp: 11/29/2012 12:54:14 PM
+Timestamp: 11/30/2012 3:13:16 PM
 
-Message: HandlingInstanceID: 2bb7739e-3d78-4273-9b06-2bd902a24336
-An exception of type 'System.Web.HttpCompileException' occurred and was caught.
--------------------------------------------------------------------------------
-11/29/2012 14:54:14
-Type : System.Web.HttpCompileException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
-Message : c:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\root\ba07f1b3\dd295d10\App_Web_index.cshtml.516c0016.p6sef4va.0.cs(29): error CS0234: The type or namespace name 'AdHocListModel' does not exist in the namespace 'SitefinityWebApp.Mvc.Models' (are you missing an assembly reference?)
-Source : System.Web
+Message: HandlingInstanceID: 534cb31c-01a1-4501-bccc-7112685c4391
+An exception of type 'System.ArgumentException' occurred and was caught.
+------------------------------------------------------------------------
+11/30/2012 17:13:16
+Type : System.ArgumentException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Invalid JSON primitive: object.
+Source : System.Web.Extensions
 Help link : 
-Results : System.CodeDom.Compiler.CompilerResults
-SourceCode : 
-WebEventCode : 0
-ErrorCode : -2147467259
+ParamName : 
 Data : System.Collections.ListDictionaryInternal
-TargetSite : System.CodeDom.Compiler.CompilerResults Compile()
-HResult : -2147467259
-Stack Trace :    at System.Web.Compilation.AssemblyBuilder.Compile()
-   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
-   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
-   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
-   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
-   at System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
-   at System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
-   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
-   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1c.<InvokeActionResultWithFilters>b__19()
-   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
-   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+TargetSite : System.Object DeserializePrimitiveObject()
+HResult : -2147024809
+Stack Trace :    at System.Web.Script.Serialization.JavaScriptObjectDeserializer.DeserializePrimitiveObject()
+   at System.Web.Script.Serialization.JavaScriptObjectDeserializer.DeserializeInternal(Int32 depth)
+   at System.Web.Script.Serialization.JavaScriptObjectDeserializer.DeserializeList(Int32 depth)
+   at System.Web.Script.Serialization.JavaScriptObjectDeserializer.DeserializeInternal(Int32 depth)
+   at System.Web.Script.Serialization.JavaScriptObjectDeserializer.BasicDeserialize(String input, Int32 depthLimit, JavaScriptSerializer serializer)
+   at System.Web.Script.Serialization.JavaScriptSerializer.Deserialize[T](String input)
+   at SitefinityWebApp.Mvc.Controllers.AdHocListController.Index() in c:\PowerTools\PowerTools\SitefinityWebsite\Mvc\Controllers\AdHocListController.cs:line 54
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
    at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
    at Telerik.Sitefinity.Mvc.ControllerWrapper.Execute()
    at Telerik.Sitefinity.Mvc.Proxy.MvcControllerProxy.ExecuteController()
@@ -245,9 +420,9 @@ Stack Trace :    at System.Web.Compilation.AssemblyBuilder.Compile()
 Additional Info:
 
 MachineName : OSMAK
-TimeStamp : 11/29/2012 12:54:14 PM
+TimeStamp : 11/30/2012 3:13:16 PM
 FullName : Telerik.Sitefinity.Utilities, Version=5.2.3800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
-AppDomainName : /LM/W3SVC/6/ROOT-15-129986672312050400
+AppDomainName : /LM/W3SVC/6/ROOT-2-129987619535548231
 ThreadIdentity : admin
 WindowsIdentity : NT AUTHORITY\SYSTEM
 Requested URL : http://localhost:8011/home/Action/Edit
@@ -265,54 +440,134 @@ Title:Enterprise Library Exception Handling
 
 Machine: OSMAK
 
-App Domain: /LM/W3SVC/6/ROOT-15-129986672312050400
+App Domain: /LM/W3SVC/6/ROOT-2-129987619535548231
 
-ProcessId: 8496
+ProcessId: 6032
 
 Process Name: c:\windows\system32\inetsrv\w3wp.exe
 
 Thread Name: 
 
-Win32 ThreadId:4432
+Win32 ThreadId:6048
 
 Extended Properties: 
 ----------------------------------------
 ----------------------------------------
-Timestamp: 11/29/2012 12:54:31 PM
+Timestamp: 11/30/2012 3:14:12 PM
 
-Message: HandlingInstanceID: 8322b70e-6008-4100-bed6-17f64fd39fd4
-An exception of type 'System.Security.Cryptography.CryptographicException' occurred and was caught.
----------------------------------------------------------------------------------------------------
-11/29/2012 14:54:31
-Type : System.Security.Cryptography.CryptographicException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-Message : Bad Data.
-
-Source : mscorlib
+Message: HandlingInstanceID: 491e2785-ddcf-472e-8094-ed4eb911886d
+An exception of type 'System.ArgumentException' occurred and was caught.
+------------------------------------------------------------------------
+11/30/2012 17:14:12
+Type : System.ArgumentException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Invalid JSON primitive: object.
+Source : System.Web.Extensions
 Help link : 
+ParamName : 
 Data : System.Collections.ListDictionaryInternal
-TargetSite : Void ThrowCryptographicException(Int32)
-HResult : -2146893819
-Stack Trace :    at System.Security.Cryptography.CryptographicException.ThrowCryptographicException(Int32 hr)
-   at System.Security.Cryptography.Utils._DecryptData(SafeKeyHandle hKey, Byte[] data, Int32 ib, Int32 cb, Byte[]& outputBuffer, Int32 outputOffset, PaddingMode PaddingMode, Boolean fDone)
-   at System.Security.Cryptography.CryptoAPITransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
-   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
-   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
-   at System.IO.Stream.Close()
-   at Telerik.Sitefinity.Security.SecurityManager.DecryptData(Byte[] data)
-   at Microsoft.IdentityModel.Tokens.SessionSecurityTokenHandler.ApplyTransforms(Byte[] cookie, Boolean outbound)
-   at Microsoft.IdentityModel.Tokens.SessionSecurityTokenHandler.ReadToken(XmlReader reader, SecurityTokenResolver tokenResolver)
-   at Microsoft.IdentityModel.Tokens.SessionSecurityTokenHandler.ReadToken(Byte[] token, SecurityTokenResolver tokenResolver)
-   at Telerik.Sitefinity.Security.Claims.SitefinitySessionAuthenticationModule.ReadToken(Byte[] sessionCookie)
+TargetSite : System.Object DeserializePrimitiveObject()
+HResult : -2147024809
+Stack Trace :    at System.Web.Script.Serialization.JavaScriptObjectDeserializer.DeserializePrimitiveObject()
+   at System.Web.Script.Serialization.JavaScriptObjectDeserializer.DeserializeInternal(Int32 depth)
+   at System.Web.Script.Serialization.JavaScriptObjectDeserializer.DeserializeList(Int32 depth)
+   at System.Web.Script.Serialization.JavaScriptObjectDeserializer.DeserializeInternal(Int32 depth)
+   at System.Web.Script.Serialization.JavaScriptObjectDeserializer.BasicDeserialize(String input, Int32 depthLimit, JavaScriptSerializer serializer)
+   at System.Web.Script.Serialization.JavaScriptSerializer.Deserialize[T](String input)
+   at SitefinityWebApp.Mvc.Controllers.AdHocListController.Index() in c:\PowerTools\PowerTools\SitefinityWebsite\Mvc\Controllers\AdHocListController.cs:line 54
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at Telerik.Sitefinity.Mvc.ControllerWrapper.Execute()
+   at Telerik.Sitefinity.Mvc.Proxy.MvcControllerProxy.ExecuteController()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
 
 Additional Info:
 
 MachineName : OSMAK
-TimeStamp : 11/29/2012 12:54:31 PM
+TimeStamp : 11/30/2012 3:14:12 PM
 FullName : Telerik.Sitefinity.Utilities, Version=5.2.3800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
-AppDomainName : /LM/W3SVC/6/ROOT-16-129986672554430400
+AppDomainName : /LM/W3SVC/6/ROOT-2-129987619535548231
 ThreadIdentity : 
 WindowsIdentity : NT AUTHORITY\SYSTEM
-Requested URL : http://localhost:8011/Sitefinity/Public/ResponsiveDesign/layout_transformations.css
+Requested URL : http://localhost:8011/Sitefinity/Services/Pages/ZoneEditorService.svc/Control/
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: OSMAK
+
+App Domain: /LM/W3SVC/6/ROOT-2-129987619535548231
+
+ProcessId: 6032
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:5720
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 11/30/2012 3:15:49 PM
+
+Message: HandlingInstanceID: facc5d01-7e8b-4226-9b28-3d804e493255
+An exception of type 'System.ArgumentException' occurred and was caught.
+------------------------------------------------------------------------
+11/30/2012 17:15:49
+Type : System.ArgumentException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Invalid JSON primitive: object.
+Source : System.Web.Extensions
+Help link : 
+ParamName : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : System.Object DeserializePrimitiveObject()
+HResult : -2147024809
+Stack Trace :    at System.Web.Script.Serialization.JavaScriptObjectDeserializer.DeserializePrimitiveObject()
+   at System.Web.Script.Serialization.JavaScriptObjectDeserializer.DeserializeInternal(Int32 depth)
+   at System.Web.Script.Serialization.JavaScriptObjectDeserializer.DeserializeList(Int32 depth)
+   at System.Web.Script.Serialization.JavaScriptObjectDeserializer.DeserializeInternal(Int32 depth)
+   at System.Web.Script.Serialization.JavaScriptObjectDeserializer.BasicDeserialize(String input, Int32 depthLimit, JavaScriptSerializer serializer)
+   at System.Web.Script.Serialization.JavaScriptSerializer.Deserialize[T](String input)
+   at SitefinityWebApp.Mvc.Controllers.AdHocListController.Index() in c:\PowerTools\PowerTools\SitefinityWebsite\Mvc\Controllers\AdHocListController.cs:line 54
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at Telerik.Sitefinity.Mvc.ControllerWrapper.Execute()
+   at Telerik.Sitefinity.Mvc.Proxy.MvcControllerProxy.ExecuteController()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at Telerik.Sitefinity.Modules.Pages.DraftProxyBase.editor_ControlAdd(Object sender, ZoneEditorEventArgs e)
+
+Additional Info:
+
+MachineName : OSMAK
+TimeStamp : 11/30/2012 3:15:49 PM
+FullName : Telerik.Sitefinity.Utilities, Version=5.2.3800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/6/ROOT-2-129987619535548231
+ThreadIdentity : admin
+WindowsIdentity : NT AUTHORITY\SYSTEM
+Requested URL : http://localhost:8011/home/Action/Edit
 
 
 Category: ErrorLog
@@ -327,15 +582,947 @@ Title:Enterprise Library Exception Handling
 
 Machine: OSMAK
 
-App Domain: /LM/W3SVC/6/ROOT-16-129986672554430400
+App Domain: /LM/W3SVC/6/ROOT-2-129987619535548231
 
-ProcessId: 8496
+ProcessId: 6032
 
 Process Name: c:\windows\system32\inetsrv\w3wp.exe
 
 Thread Name: 
 
-Win32 ThreadId:4432
+Win32 ThreadId:8360
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 11/30/2012 3:16:42 PM
+
+Message: HandlingInstanceID: 30d3baa8-2a97-4e06-87b0-ac61e30752d0
+An exception of type 'System.MissingMethodException' occurred and was caught.
+-----------------------------------------------------------------------------
+11/30/2012 17:16:42
+Type : System.MissingMethodException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : No parameterless constructor defined for type of 'System.String'.
+Source : System.Web.Extensions
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Boolean ConvertDictionaryToObject(System.Collections.Generic.IDictionary`2[System.String,System.Object], System.Type, System.Web.Script.Serialization.JavaScriptSerializer, Boolean, System.Object ByRef)
+HResult : -2146233069
+Stack Trace :    at System.Web.Script.Serialization.ObjectConverter.ConvertDictionaryToObject(IDictionary`2 dictionary, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   at System.Web.Script.Serialization.ObjectConverter.ConvertObjectToTypeInternal(Object o, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   at System.Web.Script.Serialization.ObjectConverter.ConvertObjectToTypeMain(Object o, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   at System.Web.Script.Serialization.ObjectConverter.AddItemToList(IList oldList, IList newList, Type elementType, JavaScriptSerializer serializer, Boolean throwOnError)
+   at System.Web.Script.Serialization.ObjectConverter.ConvertListToObject(IList list, Type type, JavaScriptSerializer serializer, Boolean throwOnError, IList& convertedList)
+   at System.Web.Script.Serialization.ObjectConverter.ConvertObjectToTypeInternal(Object o, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   at System.Web.Script.Serialization.ObjectConverter.ConvertObjectToTypeMain(Object o, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   at System.Web.Script.Serialization.JavaScriptSerializer.Deserialize[T](String input)
+   at SitefinityWebApp.Mvc.Controllers.AdHocListController.Index() in c:\PowerTools\PowerTools\SitefinityWebsite\Mvc\Controllers\AdHocListController.cs:line 54
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at Telerik.Sitefinity.Mvc.ControllerWrapper.Execute()
+   at Telerik.Sitefinity.Mvc.Proxy.MvcControllerProxy.ExecuteController()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+Additional Info:
+
+MachineName : OSMAK
+TimeStamp : 11/30/2012 3:16:42 PM
+FullName : Telerik.Sitefinity.Utilities, Version=5.2.3800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/6/ROOT-1-129987621757498231
+ThreadIdentity : admin
+WindowsIdentity : NT AUTHORITY\SYSTEM
+Requested URL : http://localhost:8011/Sitefinity/Services/Pages/ZoneEditorService.svc/Control/
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: OSMAK
+
+App Domain: /LM/W3SVC/6/ROOT-1-129987621757498231
+
+ProcessId: 3768
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:4212
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 11/30/2012 3:16:45 PM
+
+Message: HandlingInstanceID: f9507096-c23f-4fd7-bbfc-ce5bb2144f1b
+An exception of type 'System.MissingMethodException' occurred and was caught.
+-----------------------------------------------------------------------------
+11/30/2012 17:16:45
+Type : System.MissingMethodException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : No parameterless constructor defined for type of 'System.String'.
+Source : System.Web.Extensions
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Boolean ConvertDictionaryToObject(System.Collections.Generic.IDictionary`2[System.String,System.Object], System.Type, System.Web.Script.Serialization.JavaScriptSerializer, Boolean, System.Object ByRef)
+HResult : -2146233069
+Stack Trace :    at System.Web.Script.Serialization.ObjectConverter.ConvertDictionaryToObject(IDictionary`2 dictionary, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   at System.Web.Script.Serialization.ObjectConverter.ConvertObjectToTypeInternal(Object o, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   at System.Web.Script.Serialization.ObjectConverter.ConvertObjectToTypeMain(Object o, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   at System.Web.Script.Serialization.ObjectConverter.AddItemToList(IList oldList, IList newList, Type elementType, JavaScriptSerializer serializer, Boolean throwOnError)
+   at System.Web.Script.Serialization.ObjectConverter.ConvertListToObject(IList list, Type type, JavaScriptSerializer serializer, Boolean throwOnError, IList& convertedList)
+   at System.Web.Script.Serialization.ObjectConverter.ConvertObjectToTypeInternal(Object o, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   at System.Web.Script.Serialization.ObjectConverter.ConvertObjectToTypeMain(Object o, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   at System.Web.Script.Serialization.JavaScriptSerializer.Deserialize[T](String input)
+   at SitefinityWebApp.Mvc.Controllers.AdHocListController.Index() in c:\PowerTools\PowerTools\SitefinityWebsite\Mvc\Controllers\AdHocListController.cs:line 54
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at Telerik.Sitefinity.Mvc.ControllerWrapper.Execute()
+   at Telerik.Sitefinity.Mvc.Proxy.MvcControllerProxy.ExecuteController()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at Telerik.Sitefinity.Modules.Pages.DraftProxyBase.editor_ControlAdd(Object sender, ZoneEditorEventArgs e)
+
+Additional Info:
+
+MachineName : OSMAK
+TimeStamp : 11/30/2012 3:16:45 PM
+FullName : Telerik.Sitefinity.Utilities, Version=5.2.3800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/6/ROOT-1-129987621757498231
+ThreadIdentity : admin
+WindowsIdentity : NT AUTHORITY\SYSTEM
+Requested URL : http://localhost:8011/home/Action/Edit
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: OSMAK
+
+App Domain: /LM/W3SVC/6/ROOT-1-129987621757498231
+
+ProcessId: 3768
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:10756
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 11/30/2012 4:45:14 PM
+
+Message: HandlingInstanceID: ace99b74-6028-4b4f-9a3e-dbda92cda903
+An exception of type 'System.MissingMethodException' occurred and was caught.
+-----------------------------------------------------------------------------
+11/30/2012 18:45:14
+Type : System.MissingMethodException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : No parameterless constructor defined for type of 'System.String'.
+Source : System.Web.Extensions
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Boolean ConvertDictionaryToObject(System.Collections.Generic.IDictionary`2[System.String,System.Object], System.Type, System.Web.Script.Serialization.JavaScriptSerializer, Boolean, System.Object ByRef)
+HResult : -2146233069
+Stack Trace :    at System.Web.Script.Serialization.ObjectConverter.ConvertDictionaryToObject(IDictionary`2 dictionary, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   at System.Web.Script.Serialization.ObjectConverter.ConvertObjectToTypeInternal(Object o, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   at System.Web.Script.Serialization.ObjectConverter.ConvertObjectToTypeMain(Object o, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   at System.Web.Script.Serialization.ObjectConverter.AddItemToList(IList oldList, IList newList, Type elementType, JavaScriptSerializer serializer, Boolean throwOnError)
+   at System.Web.Script.Serialization.ObjectConverter.ConvertListToObject(IList list, Type type, JavaScriptSerializer serializer, Boolean throwOnError, IList& convertedList)
+   at System.Web.Script.Serialization.ObjectConverter.ConvertObjectToTypeInternal(Object o, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   at System.Web.Script.Serialization.ObjectConverter.ConvertObjectToTypeMain(Object o, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   at System.Web.Script.Serialization.JavaScriptSerializer.Deserialize[T](String input)
+   at SitefinityWebApp.Mvc.Controllers.AdHocListController.Index() in c:\PowerTools\PowerTools\SitefinityWebsite\Mvc\Controllers\AdHocListController.cs:line 60
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at Telerik.Sitefinity.Mvc.ControllerWrapper.Execute()
+   at Telerik.Sitefinity.Mvc.Proxy.MvcControllerProxy.ExecuteController()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at Telerik.Sitefinity.Modules.Pages.DraftProxyBase.editor_ControlAdd(Object sender, ZoneEditorEventArgs e)
+
+Additional Info:
+
+MachineName : OSMAK
+TimeStamp : 11/30/2012 4:45:14 PM
+FullName : Telerik.Sitefinity.Utilities, Version=5.2.3800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/6/ROOT-1-129987673832055265
+ThreadIdentity : admin
+WindowsIdentity : NT AUTHORITY\SYSTEM
+Requested URL : http://localhost:8011/home/Action/Edit
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: OSMAK
+
+App Domain: /LM/W3SVC/6/ROOT-1-129987673832055265
+
+ProcessId: 9508
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:7100
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 11/30/2012 4:45:51 PM
+
+Message: HandlingInstanceID: a1ef694d-0aec-4479-b41e-ce3629617f53
+An exception of type 'System.MissingMethodException' occurred and was caught.
+-----------------------------------------------------------------------------
+11/30/2012 18:45:51
+Type : System.MissingMethodException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : No parameterless constructor defined for type of 'System.String'.
+Source : System.Web.Extensions
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Boolean ConvertDictionaryToObject(System.Collections.Generic.IDictionary`2[System.String,System.Object], System.Type, System.Web.Script.Serialization.JavaScriptSerializer, Boolean, System.Object ByRef)
+HResult : -2146233069
+Stack Trace :    at System.Web.Script.Serialization.ObjectConverter.ConvertDictionaryToObject(IDictionary`2 dictionary, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   at System.Web.Script.Serialization.ObjectConverter.ConvertObjectToTypeInternal(Object o, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   at System.Web.Script.Serialization.ObjectConverter.ConvertObjectToTypeMain(Object o, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   at System.Web.Script.Serialization.ObjectConverter.AddItemToList(IList oldList, IList newList, Type elementType, JavaScriptSerializer serializer, Boolean throwOnError)
+   at System.Web.Script.Serialization.ObjectConverter.ConvertListToObject(IList list, Type type, JavaScriptSerializer serializer, Boolean throwOnError, IList& convertedList)
+   at System.Web.Script.Serialization.ObjectConverter.ConvertObjectToTypeInternal(Object o, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   at System.Web.Script.Serialization.ObjectConverter.ConvertObjectToTypeMain(Object o, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   at System.Web.Script.Serialization.JavaScriptSerializer.Deserialize[T](String input)
+   at SitefinityWebApp.Mvc.Controllers.AdHocListController.Index() in c:\PowerTools\PowerTools\SitefinityWebsite\Mvc\Controllers\AdHocListController.cs:line 60
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at Telerik.Sitefinity.Mvc.ControllerWrapper.Execute()
+   at Telerik.Sitefinity.Mvc.Proxy.MvcControllerProxy.ExecuteController()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+Additional Info:
+
+MachineName : OSMAK
+TimeStamp : 11/30/2012 4:45:51 PM
+FullName : Telerik.Sitefinity.Utilities, Version=5.2.3800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/6/ROOT-1-129987673832055265
+ThreadIdentity : admin
+WindowsIdentity : NT AUTHORITY\SYSTEM
+Requested URL : http://localhost:8011/Sitefinity/Services/Pages/ZoneEditorService.svc/Control/
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: OSMAK
+
+App Domain: /LM/W3SVC/6/ROOT-1-129987673832055265
+
+ProcessId: 9508
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:9476
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 11/30/2012 4:46:39 PM
+
+Message: HandlingInstanceID: 3e2029fd-c61f-434c-8de9-0b0ae181811d
+An exception of type 'System.MissingMethodException' occurred and was caught.
+-----------------------------------------------------------------------------
+11/30/2012 18:46:39
+Type : System.MissingMethodException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : No parameterless constructor defined for type of 'System.String'.
+Source : System.Web.Extensions
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Boolean ConvertDictionaryToObject(System.Collections.Generic.IDictionary`2[System.String,System.Object], System.Type, System.Web.Script.Serialization.JavaScriptSerializer, Boolean, System.Object ByRef)
+HResult : -2146233069
+Stack Trace :    at System.Web.Script.Serialization.ObjectConverter.ConvertDictionaryToObject(IDictionary`2 dictionary, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   at System.Web.Script.Serialization.ObjectConverter.ConvertObjectToTypeInternal(Object o, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   at System.Web.Script.Serialization.ObjectConverter.ConvertObjectToTypeMain(Object o, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   at System.Web.Script.Serialization.ObjectConverter.AddItemToList(IList oldList, IList newList, Type elementType, JavaScriptSerializer serializer, Boolean throwOnError)
+   at System.Web.Script.Serialization.ObjectConverter.ConvertListToObject(IList list, Type type, JavaScriptSerializer serializer, Boolean throwOnError, IList& convertedList)
+   at System.Web.Script.Serialization.ObjectConverter.ConvertObjectToTypeInternal(Object o, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   at System.Web.Script.Serialization.ObjectConverter.ConvertObjectToTypeMain(Object o, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   at System.Web.Script.Serialization.JavaScriptSerializer.Deserialize[T](String input)
+   at SitefinityWebApp.Mvc.Controllers.AdHocListController.Index() in c:\PowerTools\PowerTools\SitefinityWebsite\Mvc\Controllers\AdHocListController.cs:line 60
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at Telerik.Sitefinity.Mvc.ControllerWrapper.Execute()
+   at Telerik.Sitefinity.Mvc.Proxy.MvcControllerProxy.ExecuteController()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+Additional Info:
+
+MachineName : OSMAK
+TimeStamp : 11/30/2012 4:46:39 PM
+FullName : Telerik.Sitefinity.Utilities, Version=5.2.3800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/6/ROOT-1-129987673832055265
+ThreadIdentity : admin
+WindowsIdentity : NT AUTHORITY\SYSTEM
+Requested URL : http://localhost:8011/Sitefinity/Services/Pages/ZoneEditorService.svc/Control/
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: OSMAK
+
+App Domain: /LM/W3SVC/6/ROOT-1-129987673832055265
+
+ProcessId: 9508
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:9476
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 11/30/2012 4:47:15 PM
+
+Message: HandlingInstanceID: 9873e696-6fae-4dd1-a53f-bc810181610c
+An exception of type 'System.MissingMethodException' occurred and was caught.
+-----------------------------------------------------------------------------
+11/30/2012 18:47:15
+Type : System.MissingMethodException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : No parameterless constructor defined for type of 'System.String'.
+Source : System.Web.Extensions
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Boolean ConvertDictionaryToObject(System.Collections.Generic.IDictionary`2[System.String,System.Object], System.Type, System.Web.Script.Serialization.JavaScriptSerializer, Boolean, System.Object ByRef)
+HResult : -2146233069
+Stack Trace :    at System.Web.Script.Serialization.ObjectConverter.ConvertDictionaryToObject(IDictionary`2 dictionary, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   at System.Web.Script.Serialization.ObjectConverter.ConvertObjectToTypeInternal(Object o, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   at System.Web.Script.Serialization.ObjectConverter.ConvertObjectToTypeMain(Object o, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   at System.Web.Script.Serialization.ObjectConverter.AddItemToList(IList oldList, IList newList, Type elementType, JavaScriptSerializer serializer, Boolean throwOnError)
+   at System.Web.Script.Serialization.ObjectConverter.ConvertListToObject(IList list, Type type, JavaScriptSerializer serializer, Boolean throwOnError, IList& convertedList)
+   at System.Web.Script.Serialization.ObjectConverter.ConvertObjectToTypeInternal(Object o, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   at System.Web.Script.Serialization.ObjectConverter.ConvertObjectToTypeMain(Object o, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   at System.Web.Script.Serialization.JavaScriptSerializer.Deserialize[T](String input)
+   at SitefinityWebApp.Mvc.Controllers.AdHocListController.Index() in c:\PowerTools\PowerTools\SitefinityWebsite\Mvc\Controllers\AdHocListController.cs:line 60
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at Telerik.Sitefinity.Mvc.ControllerWrapper.Execute()
+   at Telerik.Sitefinity.Mvc.Proxy.MvcControllerProxy.ExecuteController()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at Telerik.Sitefinity.Modules.Pages.DraftProxyBase.editor_ControlAdd(Object sender, ZoneEditorEventArgs e)
+
+Additional Info:
+
+MachineName : OSMAK
+TimeStamp : 11/30/2012 4:47:15 PM
+FullName : Telerik.Sitefinity.Utilities, Version=5.2.3800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/6/ROOT-1-129987673832055265
+ThreadIdentity : admin
+WindowsIdentity : NT AUTHORITY\SYSTEM
+Requested URL : http://localhost:8011/home/Action/Edit
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: OSMAK
+
+App Domain: /LM/W3SVC/6/ROOT-1-129987673832055265
+
+ProcessId: 9508
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:7924
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 11/30/2012 4:47:28 PM
+
+Message: HandlingInstanceID: 0df49f93-6147-45ed-8918-a97137f5bd15
+An exception of type 'System.Runtime.Serialization.SerializationException' occurred and was caught.
+---------------------------------------------------------------------------------------------------
+11/30/2012 18:47:28
+Type : System.Runtime.Serialization.SerializationException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : There was an error deserializing the object of type Telerik.Sitefinity.Modules.Pages.Web.Services.Model.WcfControlProperty[]. End element 'PropertyValue' from namespace '' expected. Found element 'item' from namespace ''.
+Source : System.Runtime.Serialization
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : System.Object ReadObjectHandleExceptions(System.Runtime.Serialization.XmlReaderDelegator, Boolean, System.Runtime.Serialization.DataContractResolver)
+HResult : -2146233076
+Stack Trace :    at System.Runtime.Serialization.XmlObjectSerializer.ReadObjectHandleExceptions(XmlReaderDelegator reader, Boolean verifyObjectName, DataContractResolver dataContractResolver)
+   at System.Runtime.Serialization.Json.DataContractJsonSerializer.ReadObject(XmlDictionaryReader reader, Boolean verifyObjectName)
+   at System.ServiceModel.Dispatcher.SingleBodyParameterDataContractMessageFormatter.ReadObject(Message message)
+   at System.ServiceModel.Dispatcher.SingleBodyParameterMessageFormatter.DeserializeRequest(Message message, Object[] parameters)
+   at System.ServiceModel.Dispatcher.DemultiplexingDispatchMessageFormatter.DeserializeRequest(Message message, Object[] parameters)
+   at System.ServiceModel.Dispatcher.UriTemplateDispatchFormatter.DeserializeRequest(Message message, Object[] parameters)
+   at System.ServiceModel.Dispatcher.DispatchOperationRuntime.DeserializeInputs(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeBegin(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage5(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage31(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet)
+
+Additional Info:
+
+MachineName : OSMAK
+TimeStamp : 11/30/2012 4:47:28 PM
+FullName : Telerik.Sitefinity.Utilities, Version=5.2.3800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/6/ROOT-1-129987673832055265
+ThreadIdentity : 
+WindowsIdentity : NT AUTHORITY\SYSTEM
+Requested URL : http://localhost:8011/Sitefinity/Services/Pages/ControlPropertyService.svc/batch/566b307f-5d85-40ac-a944-d534e257e5cd/?pageId=da20a580-8224-4f73-b7e2-1dfd2ce6bf52&mediaType=Page&checkLiveVersion=False&upgradePageVersion=False&propertyLocalization=0&isOpenedByBrowseAndEdit=false
+	Inner Exception
+	---------------
+	Type : System.Xml.XmlException, System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+	Message : End element 'PropertyValue' from namespace '' expected. Found element 'item' from namespace ''.
+	Source : System.Runtime.Serialization
+	Help link : 
+	LineNumber : 0
+	LinePosition : 0
+	SourceUri : 
+	Data : System.Collections.ListDictionaryInternal
+	TargetSite : Void ThrowXmlException(System.Xml.XmlDictionaryReader, System.String, System.String, System.String, System.String)
+	HResult : -2146232000
+	Stack Trace :    at System.Xml.XmlExceptionHelper.ThrowXmlException(XmlDictionaryReader reader, String res, String arg1, String arg2, String arg3)
+	   at System.Xml.XmlBaseReader.ReadEndElement()
+	   at System.Xml.XmlBaseReader.ReadElementContentAsString()
+	   at ReadWcfControlPropertyFromJson(XmlReaderDelegator , XmlObjectSerializerReadContextComplexJson , XmlDictionaryString , XmlDictionaryString[] )
+	   at System.Runtime.Serialization.Json.JsonClassDataContract.ReadJsonValueCore(XmlReaderDelegator jsonReader, XmlObjectSerializerReadContextComplexJson context)
+	   at System.Runtime.Serialization.Json.JsonDataContract.ReadJsonValue(XmlReaderDelegator jsonReader, XmlObjectSerializerReadContextComplexJson context)
+	   at System.Runtime.Serialization.XmlObjectSerializerReadContext.InternalDeserialize(XmlReaderDelegator reader, String name, String ns, Type declaredType, DataContract& dataContract)
+	   at System.Runtime.Serialization.XmlObjectSerializerReadContext.InternalDeserialize(XmlReaderDelegator xmlReader, Int32 id, RuntimeTypeHandle declaredTypeHandle, String name, String ns)
+	   at ReadArrayOfWcfControlPropertyFromJson(XmlReaderDelegator , XmlObjectSerializerReadContextComplexJson , XmlDictionaryString , XmlDictionaryString , CollectionDataContract )
+	   at System.Runtime.Serialization.Json.JsonCollectionDataContract.ReadJsonValueCore(XmlReaderDelegator jsonReader, XmlObjectSerializerReadContextComplexJson context)
+	   at System.Runtime.Serialization.Json.JsonDataContract.ReadJsonValue(XmlReaderDelegator jsonReader, XmlObjectSerializerReadContextComplexJson context)
+	   at System.Runtime.Serialization.XmlObjectSerializerReadContext.InternalDeserialize(XmlReaderDelegator reader, String name, String ns, Type declaredType, DataContract& dataContract)
+	   at System.Runtime.Serialization.XmlObjectSerializerReadContext.InternalDeserialize(XmlReaderDelegator xmlReader, Type declaredType, DataContract dataContract, String name, String ns)
+	   at System.Runtime.Serialization.Json.DataContractJsonSerializer.InternalReadObject(XmlReaderDelegator xmlReader, Boolean verifyObjectName)
+	   at System.Runtime.Serialization.XmlObjectSerializer.ReadObjectHandleExceptions(XmlReaderDelegator reader, Boolean verifyObjectName, DataContractResolver dataContractResolver)
+
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: OSMAK
+
+App Domain: /LM/W3SVC/6/ROOT-1-129987673832055265
+
+ProcessId: 9508
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:6568
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 11/30/2012 4:47:53 PM
+
+Message: HandlingInstanceID: 77214f8c-573d-4b17-a497-5a56d84334e5
+An exception of type 'System.Runtime.Serialization.SerializationException' occurred and was caught.
+---------------------------------------------------------------------------------------------------
+11/30/2012 18:47:53
+Type : System.Runtime.Serialization.SerializationException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : There was an error deserializing the object of type Telerik.Sitefinity.Modules.Pages.Web.Services.Model.WcfControlProperty[]. End element 'PropertyValue' from namespace '' expected. Found element 'item' from namespace ''.
+Source : System.Runtime.Serialization
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : System.Object ReadObjectHandleExceptions(System.Runtime.Serialization.XmlReaderDelegator, Boolean, System.Runtime.Serialization.DataContractResolver)
+HResult : -2146233076
+Stack Trace :    at System.Runtime.Serialization.XmlObjectSerializer.ReadObjectHandleExceptions(XmlReaderDelegator reader, Boolean verifyObjectName, DataContractResolver dataContractResolver)
+   at System.Runtime.Serialization.Json.DataContractJsonSerializer.ReadObject(XmlDictionaryReader reader, Boolean verifyObjectName)
+   at System.ServiceModel.Dispatcher.SingleBodyParameterDataContractMessageFormatter.ReadObject(Message message)
+   at System.ServiceModel.Dispatcher.SingleBodyParameterMessageFormatter.DeserializeRequest(Message message, Object[] parameters)
+   at System.ServiceModel.Dispatcher.DemultiplexingDispatchMessageFormatter.DeserializeRequest(Message message, Object[] parameters)
+   at System.ServiceModel.Dispatcher.UriTemplateDispatchFormatter.DeserializeRequest(Message message, Object[] parameters)
+   at System.ServiceModel.Dispatcher.DispatchOperationRuntime.DeserializeInputs(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeBegin(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage5(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage31(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet)
+
+Additional Info:
+
+MachineName : OSMAK
+TimeStamp : 11/30/2012 4:47:53 PM
+FullName : Telerik.Sitefinity.Utilities, Version=5.2.3800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/6/ROOT-1-129987673832055265
+ThreadIdentity : 
+WindowsIdentity : NT AUTHORITY\SYSTEM
+Requested URL : http://localhost:8011/Sitefinity/Services/Pages/ControlPropertyService.svc/batch/566b307f-5d85-40ac-a944-d534e257e5cd/?pageId=da20a580-8224-4f73-b7e2-1dfd2ce6bf52&mediaType=Page&checkLiveVersion=False&upgradePageVersion=False&propertyLocalization=0&isOpenedByBrowseAndEdit=false
+	Inner Exception
+	---------------
+	Type : System.Xml.XmlException, System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+	Message : End element 'PropertyValue' from namespace '' expected. Found element 'item' from namespace ''.
+	Source : System.Runtime.Serialization
+	Help link : 
+	LineNumber : 0
+	LinePosition : 0
+	SourceUri : 
+	Data : System.Collections.ListDictionaryInternal
+	TargetSite : Void ThrowXmlException(System.Xml.XmlDictionaryReader, System.String, System.String, System.String, System.String)
+	HResult : -2146232000
+	Stack Trace :    at System.Xml.XmlExceptionHelper.ThrowXmlException(XmlDictionaryReader reader, String res, String arg1, String arg2, String arg3)
+	   at System.Xml.XmlBaseReader.ReadEndElement()
+	   at System.Xml.XmlBaseReader.ReadElementContentAsString()
+	   at ReadWcfControlPropertyFromJson(XmlReaderDelegator , XmlObjectSerializerReadContextComplexJson , XmlDictionaryString , XmlDictionaryString[] )
+	   at System.Runtime.Serialization.Json.JsonClassDataContract.ReadJsonValueCore(XmlReaderDelegator jsonReader, XmlObjectSerializerReadContextComplexJson context)
+	   at System.Runtime.Serialization.Json.JsonDataContract.ReadJsonValue(XmlReaderDelegator jsonReader, XmlObjectSerializerReadContextComplexJson context)
+	   at System.Runtime.Serialization.XmlObjectSerializerReadContext.InternalDeserialize(XmlReaderDelegator reader, String name, String ns, Type declaredType, DataContract& dataContract)
+	   at System.Runtime.Serialization.XmlObjectSerializerReadContext.InternalDeserialize(XmlReaderDelegator xmlReader, Int32 id, RuntimeTypeHandle declaredTypeHandle, String name, String ns)
+	   at ReadArrayOfWcfControlPropertyFromJson(XmlReaderDelegator , XmlObjectSerializerReadContextComplexJson , XmlDictionaryString , XmlDictionaryString , CollectionDataContract )
+	   at System.Runtime.Serialization.Json.JsonCollectionDataContract.ReadJsonValueCore(XmlReaderDelegator jsonReader, XmlObjectSerializerReadContextComplexJson context)
+	   at System.Runtime.Serialization.Json.JsonDataContract.ReadJsonValue(XmlReaderDelegator jsonReader, XmlObjectSerializerReadContextComplexJson context)
+	   at System.Runtime.Serialization.XmlObjectSerializerReadContext.InternalDeserialize(XmlReaderDelegator reader, String name, String ns, Type declaredType, DataContract& dataContract)
+	   at System.Runtime.Serialization.XmlObjectSerializerReadContext.InternalDeserialize(XmlReaderDelegator xmlReader, Type declaredType, DataContract dataContract, String name, String ns)
+	   at System.Runtime.Serialization.Json.DataContractJsonSerializer.InternalReadObject(XmlReaderDelegator xmlReader, Boolean verifyObjectName)
+	   at System.Runtime.Serialization.XmlObjectSerializer.ReadObjectHandleExceptions(XmlReaderDelegator reader, Boolean verifyObjectName, DataContractResolver dataContractResolver)
+
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: OSMAK
+
+App Domain: /LM/W3SVC/6/ROOT-1-129987673832055265
+
+ProcessId: 9508
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:6568
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 11/30/2012 4:48:07 PM
+
+Message: HandlingInstanceID: 96ff8f18-f4d9-45db-9be3-9cc528e3278e
+An exception of type 'System.Runtime.Serialization.SerializationException' occurred and was caught.
+---------------------------------------------------------------------------------------------------
+11/30/2012 18:48:07
+Type : System.Runtime.Serialization.SerializationException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : There was an error deserializing the object of type Telerik.Sitefinity.Modules.Pages.Web.Services.Model.WcfControlProperty[]. End element 'PropertyValue' from namespace '' expected. Found element 'item' from namespace ''.
+Source : System.Runtime.Serialization
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : System.Object ReadObjectHandleExceptions(System.Runtime.Serialization.XmlReaderDelegator, Boolean, System.Runtime.Serialization.DataContractResolver)
+HResult : -2146233076
+Stack Trace :    at System.Runtime.Serialization.XmlObjectSerializer.ReadObjectHandleExceptions(XmlReaderDelegator reader, Boolean verifyObjectName, DataContractResolver dataContractResolver)
+   at System.Runtime.Serialization.Json.DataContractJsonSerializer.ReadObject(XmlDictionaryReader reader, Boolean verifyObjectName)
+   at System.ServiceModel.Dispatcher.SingleBodyParameterDataContractMessageFormatter.ReadObject(Message message)
+   at System.ServiceModel.Dispatcher.SingleBodyParameterMessageFormatter.DeserializeRequest(Message message, Object[] parameters)
+   at System.ServiceModel.Dispatcher.DemultiplexingDispatchMessageFormatter.DeserializeRequest(Message message, Object[] parameters)
+   at System.ServiceModel.Dispatcher.UriTemplateDispatchFormatter.DeserializeRequest(Message message, Object[] parameters)
+   at System.ServiceModel.Dispatcher.DispatchOperationRuntime.DeserializeInputs(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeBegin(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage5(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage31(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet)
+
+Additional Info:
+
+MachineName : OSMAK
+TimeStamp : 11/30/2012 4:48:07 PM
+FullName : Telerik.Sitefinity.Utilities, Version=5.2.3800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/6/ROOT-1-129987673832055265
+ThreadIdentity : 
+WindowsIdentity : NT AUTHORITY\SYSTEM
+Requested URL : http://localhost:8011/Sitefinity/Services/Pages/ControlPropertyService.svc/batch/566b307f-5d85-40ac-a944-d534e257e5cd/?pageId=da20a580-8224-4f73-b7e2-1dfd2ce6bf52&mediaType=Page&checkLiveVersion=False&upgradePageVersion=False&propertyLocalization=0&isOpenedByBrowseAndEdit=false
+	Inner Exception
+	---------------
+	Type : System.Xml.XmlException, System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+	Message : End element 'PropertyValue' from namespace '' expected. Found element 'item' from namespace ''.
+	Source : System.Runtime.Serialization
+	Help link : 
+	LineNumber : 0
+	LinePosition : 0
+	SourceUri : 
+	Data : System.Collections.ListDictionaryInternal
+	TargetSite : Void ThrowXmlException(System.Xml.XmlDictionaryReader, System.String, System.String, System.String, System.String)
+	HResult : -2146232000
+	Stack Trace :    at System.Xml.XmlExceptionHelper.ThrowXmlException(XmlDictionaryReader reader, String res, String arg1, String arg2, String arg3)
+	   at System.Xml.XmlBaseReader.ReadEndElement()
+	   at System.Xml.XmlBaseReader.ReadElementContentAsString()
+	   at ReadWcfControlPropertyFromJson(XmlReaderDelegator , XmlObjectSerializerReadContextComplexJson , XmlDictionaryString , XmlDictionaryString[] )
+	   at System.Runtime.Serialization.Json.JsonClassDataContract.ReadJsonValueCore(XmlReaderDelegator jsonReader, XmlObjectSerializerReadContextComplexJson context)
+	   at System.Runtime.Serialization.Json.JsonDataContract.ReadJsonValue(XmlReaderDelegator jsonReader, XmlObjectSerializerReadContextComplexJson context)
+	   at System.Runtime.Serialization.XmlObjectSerializerReadContext.InternalDeserialize(XmlReaderDelegator reader, String name, String ns, Type declaredType, DataContract& dataContract)
+	   at System.Runtime.Serialization.XmlObjectSerializerReadContext.InternalDeserialize(XmlReaderDelegator xmlReader, Int32 id, RuntimeTypeHandle declaredTypeHandle, String name, String ns)
+	   at ReadArrayOfWcfControlPropertyFromJson(XmlReaderDelegator , XmlObjectSerializerReadContextComplexJson , XmlDictionaryString , XmlDictionaryString , CollectionDataContract )
+	   at System.Runtime.Serialization.Json.JsonCollectionDataContract.ReadJsonValueCore(XmlReaderDelegator jsonReader, XmlObjectSerializerReadContextComplexJson context)
+	   at System.Runtime.Serialization.Json.JsonDataContract.ReadJsonValue(XmlReaderDelegator jsonReader, XmlObjectSerializerReadContextComplexJson context)
+	   at System.Runtime.Serialization.XmlObjectSerializerReadContext.InternalDeserialize(XmlReaderDelegator reader, String name, String ns, Type declaredType, DataContract& dataContract)
+	   at System.Runtime.Serialization.XmlObjectSerializerReadContext.InternalDeserialize(XmlReaderDelegator xmlReader, Type declaredType, DataContract dataContract, String name, String ns)
+	   at System.Runtime.Serialization.Json.DataContractJsonSerializer.InternalReadObject(XmlReaderDelegator xmlReader, Boolean verifyObjectName)
+	   at System.Runtime.Serialization.XmlObjectSerializer.ReadObjectHandleExceptions(XmlReaderDelegator reader, Boolean verifyObjectName, DataContractResolver dataContractResolver)
+
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: OSMAK
+
+App Domain: /LM/W3SVC/6/ROOT-1-129987673832055265
+
+ProcessId: 9508
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:9628
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 11/30/2012 4:48:29 PM
+
+Message: HandlingInstanceID: a8eb6627-d81a-4e35-a5f0-a2ef9af6c8d2
+An exception of type 'System.MissingMethodException' occurred and was caught.
+-----------------------------------------------------------------------------
+11/30/2012 18:48:29
+Type : System.MissingMethodException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : No parameterless constructor defined for type of 'System.String'.
+Source : System.Web.Extensions
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Boolean ConvertDictionaryToObject(System.Collections.Generic.IDictionary`2[System.String,System.Object], System.Type, System.Web.Script.Serialization.JavaScriptSerializer, Boolean, System.Object ByRef)
+HResult : -2146233069
+Stack Trace :    at System.Web.Script.Serialization.ObjectConverter.ConvertDictionaryToObject(IDictionary`2 dictionary, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   at System.Web.Script.Serialization.ObjectConverter.ConvertObjectToTypeInternal(Object o, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   at System.Web.Script.Serialization.ObjectConverter.ConvertObjectToTypeMain(Object o, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   at System.Web.Script.Serialization.ObjectConverter.AddItemToList(IList oldList, IList newList, Type elementType, JavaScriptSerializer serializer, Boolean throwOnError)
+   at System.Web.Script.Serialization.ObjectConverter.ConvertListToObject(IList list, Type type, JavaScriptSerializer serializer, Boolean throwOnError, IList& convertedList)
+   at System.Web.Script.Serialization.ObjectConverter.ConvertObjectToTypeInternal(Object o, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   at System.Web.Script.Serialization.ObjectConverter.ConvertObjectToTypeMain(Object o, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   at System.Web.Script.Serialization.JavaScriptSerializer.Deserialize[T](String input)
+   at SitefinityWebApp.Mvc.Controllers.AdHocListController.Index() in c:\PowerTools\PowerTools\SitefinityWebsite\Mvc\Controllers\AdHocListController.cs:line 60
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at Telerik.Sitefinity.Mvc.ControllerWrapper.Execute()
+   at Telerik.Sitefinity.Mvc.Proxy.MvcControllerProxy.ExecuteController()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at Telerik.Sitefinity.Modules.Pages.DraftProxyBase.editor_ControlAdd(Object sender, ZoneEditorEventArgs e)
+
+Additional Info:
+
+MachineName : OSMAK
+TimeStamp : 11/30/2012 4:48:29 PM
+FullName : Telerik.Sitefinity.Utilities, Version=5.2.3800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/6/ROOT-1-129987673832055265
+ThreadIdentity : admin
+WindowsIdentity : NT AUTHORITY\SYSTEM
+Requested URL : http://localhost:8011/home/Action/Edit
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: OSMAK
+
+App Domain: /LM/W3SVC/6/ROOT-1-129987673832055265
+
+ProcessId: 9508
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:10120
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 11/30/2012 4:48:44 PM
+
+Message: HandlingInstanceID: 220b79c6-86e2-4d72-ad42-2a31bb7d32cb
+An exception of type 'System.Runtime.Serialization.SerializationException' occurred and was caught.
+---------------------------------------------------------------------------------------------------
+11/30/2012 18:48:44
+Type : System.Runtime.Serialization.SerializationException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : There was an error deserializing the object of type Telerik.Sitefinity.Modules.Pages.Web.Services.Model.WcfControlProperty[]. End element 'PropertyValue' from namespace '' expected. Found element 'item' from namespace ''.
+Source : System.Runtime.Serialization
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : System.Object ReadObjectHandleExceptions(System.Runtime.Serialization.XmlReaderDelegator, Boolean, System.Runtime.Serialization.DataContractResolver)
+HResult : -2146233076
+Stack Trace :    at System.Runtime.Serialization.XmlObjectSerializer.ReadObjectHandleExceptions(XmlReaderDelegator reader, Boolean verifyObjectName, DataContractResolver dataContractResolver)
+   at System.Runtime.Serialization.Json.DataContractJsonSerializer.ReadObject(XmlDictionaryReader reader, Boolean verifyObjectName)
+   at System.ServiceModel.Dispatcher.SingleBodyParameterDataContractMessageFormatter.ReadObject(Message message)
+   at System.ServiceModel.Dispatcher.SingleBodyParameterMessageFormatter.DeserializeRequest(Message message, Object[] parameters)
+   at System.ServiceModel.Dispatcher.DemultiplexingDispatchMessageFormatter.DeserializeRequest(Message message, Object[] parameters)
+   at System.ServiceModel.Dispatcher.UriTemplateDispatchFormatter.DeserializeRequest(Message message, Object[] parameters)
+   at System.ServiceModel.Dispatcher.DispatchOperationRuntime.DeserializeInputs(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeBegin(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage5(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage31(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet)
+
+Additional Info:
+
+MachineName : OSMAK
+TimeStamp : 11/30/2012 4:48:44 PM
+FullName : Telerik.Sitefinity.Utilities, Version=5.2.3800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/6/ROOT-1-129987673832055265
+ThreadIdentity : 
+WindowsIdentity : NT AUTHORITY\SYSTEM
+Requested URL : http://localhost:8011/Sitefinity/Services/Pages/ControlPropertyService.svc/batch/566b307f-5d85-40ac-a944-d534e257e5cd/?pageId=da20a580-8224-4f73-b7e2-1dfd2ce6bf52&mediaType=Page&checkLiveVersion=False&upgradePageVersion=False&propertyLocalization=0&isOpenedByBrowseAndEdit=false
+	Inner Exception
+	---------------
+	Type : System.Xml.XmlException, System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+	Message : End element 'PropertyValue' from namespace '' expected. Found element 'item' from namespace ''.
+	Source : System.Runtime.Serialization
+	Help link : 
+	LineNumber : 0
+	LinePosition : 0
+	SourceUri : 
+	Data : System.Collections.ListDictionaryInternal
+	TargetSite : Void ThrowXmlException(System.Xml.XmlDictionaryReader, System.String, System.String, System.String, System.String)
+	HResult : -2146232000
+	Stack Trace :    at System.Xml.XmlExceptionHelper.ThrowXmlException(XmlDictionaryReader reader, String res, String arg1, String arg2, String arg3)
+	   at System.Xml.XmlBaseReader.ReadEndElement()
+	   at System.Xml.XmlBaseReader.ReadElementContentAsString()
+	   at ReadWcfControlPropertyFromJson(XmlReaderDelegator , XmlObjectSerializerReadContextComplexJson , XmlDictionaryString , XmlDictionaryString[] )
+	   at System.Runtime.Serialization.Json.JsonClassDataContract.ReadJsonValueCore(XmlReaderDelegator jsonReader, XmlObjectSerializerReadContextComplexJson context)
+	   at System.Runtime.Serialization.Json.JsonDataContract.ReadJsonValue(XmlReaderDelegator jsonReader, XmlObjectSerializerReadContextComplexJson context)
+	   at System.Runtime.Serialization.XmlObjectSerializerReadContext.InternalDeserialize(XmlReaderDelegator reader, String name, String ns, Type declaredType, DataContract& dataContract)
+	   at System.Runtime.Serialization.XmlObjectSerializerReadContext.InternalDeserialize(XmlReaderDelegator xmlReader, Int32 id, RuntimeTypeHandle declaredTypeHandle, String name, String ns)
+	   at ReadArrayOfWcfControlPropertyFromJson(XmlReaderDelegator , XmlObjectSerializerReadContextComplexJson , XmlDictionaryString , XmlDictionaryString , CollectionDataContract )
+	   at System.Runtime.Serialization.Json.JsonCollectionDataContract.ReadJsonValueCore(XmlReaderDelegator jsonReader, XmlObjectSerializerReadContextComplexJson context)
+	   at System.Runtime.Serialization.Json.JsonDataContract.ReadJsonValue(XmlReaderDelegator jsonReader, XmlObjectSerializerReadContextComplexJson context)
+	   at System.Runtime.Serialization.XmlObjectSerializerReadContext.InternalDeserialize(XmlReaderDelegator reader, String name, String ns, Type declaredType, DataContract& dataContract)
+	   at System.Runtime.Serialization.XmlObjectSerializerReadContext.InternalDeserialize(XmlReaderDelegator xmlReader, Type declaredType, DataContract dataContract, String name, String ns)
+	   at System.Runtime.Serialization.Json.DataContractJsonSerializer.InternalReadObject(XmlReaderDelegator xmlReader, Boolean verifyObjectName)
+	   at System.Runtime.Serialization.XmlObjectSerializer.ReadObjectHandleExceptions(XmlReaderDelegator reader, Boolean verifyObjectName, DataContractResolver dataContractResolver)
+
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: OSMAK
+
+App Domain: /LM/W3SVC/6/ROOT-1-129987673832055265
+
+ProcessId: 9508
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:10052
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 11/30/2012 4:49:19 PM
+
+Message: HandlingInstanceID: 2f2a2a92-a5ea-4e20-a9a0-d99948eaf1b5
+An exception of type 'System.MissingMethodException' occurred and was caught.
+-----------------------------------------------------------------------------
+11/30/2012 18:49:19
+Type : System.MissingMethodException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : No parameterless constructor defined for type of 'System.String'.
+Source : System.Web.Extensions
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Boolean ConvertDictionaryToObject(System.Collections.Generic.IDictionary`2[System.String,System.Object], System.Type, System.Web.Script.Serialization.JavaScriptSerializer, Boolean, System.Object ByRef)
+HResult : -2146233069
+Stack Trace :    at System.Web.Script.Serialization.ObjectConverter.ConvertDictionaryToObject(IDictionary`2 dictionary, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   at System.Web.Script.Serialization.ObjectConverter.ConvertObjectToTypeInternal(Object o, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   at System.Web.Script.Serialization.ObjectConverter.ConvertObjectToTypeMain(Object o, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   at System.Web.Script.Serialization.ObjectConverter.AddItemToList(IList oldList, IList newList, Type elementType, JavaScriptSerializer serializer, Boolean throwOnError)
+   at System.Web.Script.Serialization.ObjectConverter.ConvertListToObject(IList list, Type type, JavaScriptSerializer serializer, Boolean throwOnError, IList& convertedList)
+   at System.Web.Script.Serialization.ObjectConverter.ConvertObjectToTypeInternal(Object o, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   at System.Web.Script.Serialization.ObjectConverter.ConvertObjectToTypeMain(Object o, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   at System.Web.Script.Serialization.JavaScriptSerializer.Deserialize[T](String input)
+   at SitefinityWebApp.Mvc.Controllers.AdHocListController.Index() in c:\PowerTools\PowerTools\SitefinityWebsite\Mvc\Controllers\AdHocListController.cs:line 60
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+   at Telerik.Sitefinity.Mvc.ControllerWrapper.Execute()
+   at Telerik.Sitefinity.Mvc.Proxy.MvcControllerProxy.ExecuteController()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.PreRenderRecursiveInternal()
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at Telerik.Sitefinity.Modules.Pages.DraftProxyBase.editor_ControlAdd(Object sender, ZoneEditorEventArgs e)
+
+Additional Info:
+
+MachineName : OSMAK
+TimeStamp : 11/30/2012 4:49:19 PM
+FullName : Telerik.Sitefinity.Utilities, Version=5.2.3800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/6/ROOT-1-129987673832055265
+ThreadIdentity : admin
+WindowsIdentity : NT AUTHORITY\SYSTEM
+Requested URL : http://localhost:8011/home/Action/Edit
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: OSMAK
+
+App Domain: /LM/W3SVC/6/ROOT-1-129987673832055265
+
+ProcessId: 9508
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:524
 
 Extended Properties: 
 ----------------------------------------

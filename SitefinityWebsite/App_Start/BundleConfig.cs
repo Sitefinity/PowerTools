@@ -21,7 +21,6 @@ namespace SitefinityWebApp.App_Start
                     "~/Scripts/underscore.min.js",
                     "~/Scripts/backbone.min.js",
                     "~/Scripts/jquery-ui-1.9.2.custom.min.js",
-                    "~/Scripts/backbone-designer-model.js",
                     "~/Scripts/adhoc-list.designer.js"
                )
             );

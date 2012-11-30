@@ -402,7 +402,7 @@
     </Compile>
     <Compile Include="Mvc\Controllers\AdHocListController.cs" />
     <Compile Include="Mvc\Controllers\AdHocListDesignerController.cs" />
-    <Compile Include="Mvc\Controllers\StringStringArrayConverter.cs" />
+    <Compile Include="Mvc\Models\StringStringArrayConverter.cs" />
     <Compile Include="Mvc\Models\AdHocListModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -412,7 +412,6 @@
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\adhoc-list.designer.js" />
-    <Content Include="Scripts\backbone-designer-model.js" />
     <Content Include="Scripts\backbone.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />

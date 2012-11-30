@@ -1,6 +1,5 @@
 ﻿using System;
 using System.ComponentModel;
-using System.Globalization;
 using System.Linq;
 using System.Web.Mvc;
 using System.Web.Script.Serialization;
@@ -36,8 +35,7 @@ namespace SitefinityWebApp.Mvc.Controllers
             }
         }
 
-        [TypeConverter(typeof(StringStringArrayConverter))]
-        public string[] ListItems
+        public string ListItems
         {
             get
             {
@@ -51,15 +49,22 @@ namespace SitefinityWebApp.Mvc.Controllers
 
         public ActionResult Index()
         {
-            return View(new AdHocListModel() { 
+            JavaScriptSerializer serializer = new JavaScriptSerializer();
+
+            var model = new AdHocListModel()
+            {
                 ListTitle = this.ListTitle,
                 ListType = this.ListType
-            });
+            };
+            if (!string.IsNullOrEmpty(this.ListItems))
+                model.ListItems = serializer.Deserialize<string[]>(this.ListItems);
+
+            return View(model);
         }
 
-        private string listTitle = "My list";
-        private string listType = AdHocListModel.NumbersListType;
-        private string[] listItems = new string[] { "Item 1", "Item 2", "Item 3" };
+        private string listTitle;
+        private string listType;
+        private string listItems;
     }
 
 }

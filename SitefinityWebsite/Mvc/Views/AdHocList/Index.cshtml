@@ -15,8 +15,10 @@
         @:<ol>
     }
 
-    <li>Item 1</li>
-    <li>Item 2</li>
+    @foreach (var listItem in Model.ListItems)
+    {
+        <li>@listItem</li>
+    }
 
     @if (Model.ListType == SitefinityWebApp.Mvc.Models.AdHocListModel.BulletsListType)
     {
