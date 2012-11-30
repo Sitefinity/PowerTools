@@ -3,18 +3,31 @@
 
     initialize: function () {
       this.get_propertyEditor()._designer = this;
-      this.set("listTitle", this.get_controlData().ListTitle);
-      this.set("listType", this.get_controlData().ListType);
+
+      // load control properties into the model for the first time
+      var properties = this.get_controlData();
+      for (var prop in properties) {
+        this.set(prop, properties[prop]);
+      }
+      
     },
 
     applyChanges: function () {
-      this.get_controlData().ListTitle = this.get("listTitle");
-      this.get_controlData().ListType = this.get("listType");
+      // load the properties from model into the control
+      var properties = this.get_controlData();
+      for (var prop in properties) {
+        if (this.get(prop)) {
+          properties[prop] = this.get(prop);
+        }
+      }
     },
 
     refreshUI: function () {
-      this.set("listTitle", this.get_controlData().ListTitle);
-      this.set("listType", this.get_controlData().ListType);
+      // load control properties into the model
+      var properties = this.get_controlData();
+      for (var prop in properties) {
+        this.set(prop, properties[prop]);
+      }
     },
 
     get_controlData: function () {

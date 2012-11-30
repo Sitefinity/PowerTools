@@ -402,6 +402,7 @@
     </Compile>
     <Compile Include="Mvc\Controllers\AdHocListController.cs" />
     <Compile Include="Mvc\Controllers\AdHocListDesignerController.cs" />
+    <Compile Include="Mvc\Controllers\StringStringArrayConverter.cs" />
     <Compile Include="Mvc\Models\AdHocListModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

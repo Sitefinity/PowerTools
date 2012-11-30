@@ -10,16 +10,16 @@
       
       $("#sortable-list").sortable({ axis: "y" });
 
-      this.model.bind("change:listTitle", function (model, newValue) {
+      this.model.bind("change:ListTitle", function (model, newValue) {
         $("#list-title").val(newValue);
       });
 
-      this.model.bind("change:listType", function (model, newValue) {
+      this.model.bind("change:ListType", function (model, newValue) {
         $("input:radio[name=listType][value=" + newValue + "]").attr("checked", "checked");
       });
 
-      $("#list-title").val(this.model.get("listTitle"));
-      $("input:radio[name=listType][value=" + this.model.get("listType") + "]").attr("checked", "checked");
+      $("#list-title").val(this.model.get("ListTitle"));
+      $("input:radio[name=listType][value=" + this.model.get("ListType") + "]").attr("checked", "checked");
 
     },
 
@@ -29,16 +29,16 @@
     },
 
     titleChanged: function (e) {
-      this.model.set("listTitle", $("#list-title").val());
+      this.model.set("ListTitle", $("#list-title").val());
     },
 
     listTypeChanged: function (e) {
-      this.model.set("listType", $("input:radio[name=listType][checked]").val());
+      this.model.set("ListType", $("input:radio[name=listType][checked]").val());
     }
 
   });
 
-  $(document).ready(function () {
+  Sys.Application.add_load(function () {
     new DesignerView({ model: new Backbone.DesignerModel() });
   });
 

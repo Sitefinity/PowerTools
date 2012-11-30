@@ -261,3 +261,66 @@ Message: Thread pool 'ThreadPool': Shutdown of thread pool completed. Threads ab
 
 
 ----------------------------------------
+----------------------------------------
+Timestamp: 11/30/2012 9:22:14 AM
+
+Message: Shutting down threadpool...
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 11/30/2012 9:22:14 AM
+
+Message: Background task scheduler shut down
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 11/30/2012 9:22:14 AM
+
+Message: Thread pool 'ThreadPool': Shutdown of thread pool completed. All currently running threads will finish their work and stop.
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 11/30/2012 9:22:15 AM
+
+Message: WorkerThread is shut down
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 11/30/2012 9:22:15 AM
+
+Message: WorkerThread is shut down
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 11/30/2012 9:22:15 AM
+
+Message: WorkerThread is shut down
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 11/30/2012 9:22:15 AM
+
+Message: WorkerThread is shut down
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 11/30/2012 9:22:44 AM
+
+Message: Shutting down threadpool...
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 11/30/2012 9:22:44 AM
+
+Message: Thread pool 'ThreadPool': Shutdown of thread pool completed. Threads aborted.
+
+
+----------------------------------------
