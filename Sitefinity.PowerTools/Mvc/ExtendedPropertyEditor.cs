@@ -60,6 +60,9 @@ namespace Sitefinity.PowerTools.Mvc
 
         protected virtual MvcControllerProxy ResolveMvcDesigner(Type widgetType)
         {
+            if (widgetType == null)
+                throw new ArgumentNullException("widgetType");
+
             var store = PowerTools.Instance.Container.Resolve<IMvcDesignerStore>();
             if (!store.MvcDesigners.ContainsKey(widgetType))
                 return null;
