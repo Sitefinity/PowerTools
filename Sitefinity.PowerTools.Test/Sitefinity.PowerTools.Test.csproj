@@ -58,6 +58,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\ReferenceAssemblies\Telerik.Sitefinity.Model.dll</HintPath>
     </Reference>
+    <Reference Include="Telerik.Sitefinity.Utilities">
+      <HintPath>..\ReferenceAssemblies\Telerik.Sitefinity.Utilities.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <Choose>
     <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">

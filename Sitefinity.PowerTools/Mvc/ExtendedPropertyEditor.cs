@@ -75,8 +75,11 @@ namespace Sitefinity.PowerTools.Mvc
             return mvcProxy;
         }
 
-        private Type ResolveWidgetType(ControlData ctrlData)
+        protected virtual Type ResolveWidgetType(ControlData ctrlData)
         {
+            if (ctrlData == null)
+                throw new ArgumentNullException("ctrlData");
+
             // different logic for MvcControllerProxy, as designer needs to be obtained from the 
             // controller
             if (ctrlData.ObjectType == typeof(MvcControllerProxy).FullName)
