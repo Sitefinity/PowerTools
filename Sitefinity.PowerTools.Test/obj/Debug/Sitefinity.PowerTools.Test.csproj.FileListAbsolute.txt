@@ -126,3 +126,4 @@ C:\PowerTools\PowerTools\Sitefinity.PowerTools.Test\obj\Debug\Sitefinity.PowerTo
 C:\PowerTools\PowerTools\Sitefinity.PowerTools.Test\obj\Debug\Sitefinity.PowerTools.Test.pdb
 C:\PowerTools\PowerTools\Sitefinity.PowerTools.Test\bin\Debug\Telerik.OpenAccess.xml
 C:\PowerTools\PowerTools\Sitefinity.PowerTools.Test\bin\Debug\Telerik.Sitefinity.Model.xml
+C:\PowerTools\PowerTools\Sitefinity.PowerTools.Test\bin\Debug\Autofac.xml

@@ -1,10 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
+using System.Web.Mvc;
+using Autofac;
 using Telerik.Microsoft.Practices.Unity;
 using Telerik.Sitefinity.Abstractions;
 using Telerik.Sitefinity.Web.UI;
-using Autofac;
 
 namespace Sitefinity.PowerTools.Mvc
 {
@@ -20,16 +20,14 @@ namespace Sitefinity.PowerTools.Mvc
             this.ReplacePropertyEditorDialog();
         }
 
-        
-
-        public void RegisterDesigners()
-        {
-            throw new NotImplementedException();
-        }
-
         public void RegisterDesigner<TControllerWidget, TControllerDesigner>()
+            where TControllerDesigner : IController
         {
             var store = PowerTools.Instance.Container.Resolve<IMvcDesignerStore>();
+
+            if(store.MvcDesigners.ContainsKey(typeof(TControllerWidget)))
+                throw new ArgumentException(string.Format("A designer for widget of type '{0}' has already been registered.", typeof(TControllerWidget).FullName));
+
             store.MvcDesigners.Add(typeof(TControllerWidget), typeof(TControllerDesigner));
         }
 

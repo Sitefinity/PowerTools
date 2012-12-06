@@ -1,11 +1,10 @@
 using System;
+using System.Web.Mvc;
 
 namespace Sitefinity.PowerTools.Mvc
 {
     public interface IMvcManager
     {
-        void RegisterDesigners();
-
-        void RegisterDesigner<TControllerWidget, TControllerDesigner>();
+        void RegisterDesigner<TControllerWidget, TControllerDesigner>() where TControllerDesigner : IController;
     }
 }
