@@ -394,29 +394,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="AzureWebRole.cs" />
-    <Compile Include="CustomWebFormsTemplateResolver.cs" />
-    <Compile Include="Global.asax.cs">
-      <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
-    <Compile Include="Mvc\Controllers\AdHocListController.cs" />
-    <Compile Include="Mvc\Controllers\AdHocListDesignerController.cs" />
-    <Compile Include="Mvc\Models\StringStringArrayConverter.cs" />
-    <Compile Include="Mvc\Models\AdHocListModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="ClientBin\Telerik.Sitefinity.Analytics.xap" />
     <Content Include="ClientBin\Telerik.Sitefinity.Silverlight.xap" />
     <Content Include="Default.aspx" />
-    <Content Include="Global.asax" />
-    <Content Include="Scripts\adhoc-list.designer.js" />
-    <Content Include="Scripts\backbone.min.js" />
-    <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Scripts\jquery-ui-1.9.2.custom.min.js" />
-    <Content Include="Scripts\underscore.min.js" />
     <Content Include="Silverlight.js" />
     <Content Include="Sitefinity\Default.aspx" />
     <Content Include="Sitefinity\Public\Services\Thunder\ThunderService.svc" />
@@ -524,27 +508,8 @@
     <Content Include="Sitefinity\Services\Versioning\HistoryService.svc" />
     <Content Include="Sitefinity\Services\Workflow\WorkflowDefinitionService.svc" />
     <Content Include="Sitefinity\Services\Workflow\WorkflowService.svc" />
-    <Content Include="Styles\Bootstrap\css\bootstrap-responsive.css" />
-    <Content Include="Styles\Bootstrap\css\bootstrap-responsive.min.css" />
-    <Content Include="Styles\Bootstrap\css\bootstrap.css" />
-    <Content Include="Styles\Bootstrap\css\bootstrap.min.css" />
     <Content Include="img\glyphicons-halflings-white.png" />
     <Content Include="img\glyphicons-halflings.png" />
-    <Content Include="Styles\designers.css" />
-    <Content Include="Styles\jQueryUI\images\ui-bg_flat_0_aaaaaa_40x100.png" />
-    <Content Include="Styles\jQueryUI\images\ui-bg_flat_75_ffffff_40x100.png" />
-    <Content Include="Styles\jQueryUI\images\ui-bg_glass_55_fbf9ee_1x400.png" />
-    <Content Include="Styles\jQueryUI\images\ui-bg_glass_65_ffffff_1x400.png" />
-    <Content Include="Styles\jQueryUI\images\ui-bg_glass_75_dadada_1x400.png" />
-    <Content Include="Styles\jQueryUI\images\ui-bg_glass_75_e6e6e6_1x400.png" />
-    <Content Include="Styles\jQueryUI\images\ui-bg_glass_95_fef1ec_1x400.png" />
-    <Content Include="Styles\jQueryUI\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
-    <Content Include="Styles\jQueryUI\images\ui-icons_222222_256x240.png" />
-    <Content Include="Styles\jQueryUI\images\ui-icons_2e83ff_256x240.png" />
-    <Content Include="Styles\jQueryUI\images\ui-icons_454545_256x240.png" />
-    <Content Include="Styles\jQueryUI\images\ui-icons_888888_256x240.png" />
-    <Content Include="Styles\jQueryUI\images\ui-icons_cd0a0a_256x240.png" />
-    <Content Include="Styles\jQueryUI\jquery-ui-1.9.2.custom.min.css" />
     <Content Include="web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -557,16 +522,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\Sitefinity\" />
+    <Folder Include="Mvc\Controllers\" />
+    <Folder Include="Mvc\Models\" />
     <Folder Include="Mvc\Views\Shared\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="RootTemplates\FrontendRoot.Master" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Mvc\Views\AdHocList\Index.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Mvc\Views\AdHocListDesigner\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
