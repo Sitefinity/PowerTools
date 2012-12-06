@@ -1,124 +1,124 @@
 ----------------------------------------
-Timestamp: 12/6/2012 11:28:11 AM
+Timestamp: 11/30/2012 3:04:19 PM
 
 Message: Shutting down threadpool...
 
 
 ----------------------------------------
 ----------------------------------------
-Timestamp: 12/6/2012 11:28:11 AM
+Timestamp: 11/30/2012 3:04:19 PM
 
 Message: Thread pool 'ThreadPool': Shutdown of thread pool completed. All currently running threads will finish their work and stop.
 
 
 ----------------------------------------
 ----------------------------------------
-Timestamp: 12/6/2012 11:28:11 AM
+Timestamp: 11/30/2012 3:04:20 PM
 
 Message: WorkerThread is shut down
 
 
 ----------------------------------------
 ----------------------------------------
-Timestamp: 12/6/2012 11:28:11 AM
+Timestamp: 11/30/2012 3:04:20 PM
 
 Message: WorkerThread is shut down
 
 
 ----------------------------------------
 ----------------------------------------
-Timestamp: 12/6/2012 11:28:11 AM
-
-Message: WorkerThread is shut down
-
-
-----------------------------------------
-----------------------------------------
-Timestamp: 12/6/2012 11:28:11 AM
-
-Message: WorkerThread is shut down
-
-
-----------------------------------------
-----------------------------------------
-Timestamp: 12/6/2012 11:28:11 AM
+Timestamp: 11/30/2012 3:04:20 PM
 
 Message: Background task scheduler shut down
 
 
 ----------------------------------------
 ----------------------------------------
-Timestamp: 12/6/2012 11:28:41 AM
+Timestamp: 11/30/2012 3:04:20 PM
+
+Message: WorkerThread is shut down
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 11/30/2012 3:04:20 PM
+
+Message: WorkerThread is shut down
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 11/30/2012 3:04:49 PM
 
 Message: Shutting down threadpool...
 
 
 ----------------------------------------
 ----------------------------------------
-Timestamp: 12/6/2012 11:28:41 AM
+Timestamp: 11/30/2012 3:04:49 PM
 
 Message: Thread pool 'ThreadPool': Shutdown of thread pool completed. Threads aborted.
 
 
 ----------------------------------------
 ----------------------------------------
-Timestamp: 12/6/2012 12:30:17 PM
+Timestamp: 11/30/2012 5:12:04 PM
 
 Message: Shutting down threadpool...
 
 
 ----------------------------------------
 ----------------------------------------
-Timestamp: 12/6/2012 12:30:17 PM
+Timestamp: 11/30/2012 5:12:04 PM
 
 Message: Thread pool 'ThreadPool': Shutdown of thread pool completed. All currently running threads will finish their work and stop.
 
 
 ----------------------------------------
 ----------------------------------------
-Timestamp: 12/6/2012 12:30:17 PM
-
-Message: WorkerThread is shut down
-
-
-----------------------------------------
-----------------------------------------
-Timestamp: 12/6/2012 12:30:17 PM
+Timestamp: 11/30/2012 5:12:04 PM
 
 Message: Background task scheduler shut down
 
 
 ----------------------------------------
 ----------------------------------------
-Timestamp: 12/6/2012 12:30:17 PM
+Timestamp: 11/30/2012 5:12:04 PM
 
 Message: WorkerThread is shut down
 
 
 ----------------------------------------
 ----------------------------------------
-Timestamp: 12/6/2012 12:30:17 PM
+Timestamp: 11/30/2012 5:12:04 PM
 
 Message: WorkerThread is shut down
 
 
 ----------------------------------------
 ----------------------------------------
-Timestamp: 12/6/2012 12:30:17 PM
+Timestamp: 11/30/2012 5:12:04 PM
 
 Message: WorkerThread is shut down
 
 
 ----------------------------------------
 ----------------------------------------
-Timestamp: 12/6/2012 12:30:47 PM
+Timestamp: 11/30/2012 5:12:04 PM
+
+Message: WorkerThread is shut down
+
+
+----------------------------------------
+----------------------------------------
+Timestamp: 11/30/2012 5:12:34 PM
 
 Message: Shutting down threadpool...
 
 
 ----------------------------------------
 ----------------------------------------
-Timestamp: 12/6/2012 12:30:47 PM
+Timestamp: 11/30/2012 5:12:34 PM
 
 Message: Thread pool 'ThreadPool': Shutdown of thread pool completed. Threads aborted.
 
