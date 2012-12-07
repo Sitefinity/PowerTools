@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Telerik.Sitefinity.Resources</name>
+    </assembly>
+    <members>
+        <member name="T:Telerik.Sitefinity.Resources.Reference">
+            <summary>
+            This class is used to get the assembly info for the Telerik.Sitefinity.Resources assembly.
+            Do not remove it.
+            </summary>
+        </member>
+    </members>
+</doc>

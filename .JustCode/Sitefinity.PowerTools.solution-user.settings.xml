@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<JustCodeSettings Version="0.0.43" Timestamp="aa2ae93a-b8da-45e8-85ea-d08302c609fa">
+  <IgnoredErrorsAndWarningsSettings xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <IgnoredErrorsAndWarnings>
+      <FilePath>
+        <Path>C:\PowerTools\PowerTools\Sitefinity.PowerTools\Mvc\ExtendedPropertyEditor.cs</Path>
+        <ProjectFullName>C:\PowerTools\PowerTools\Sitefinity.PowerTools\Sitefinity.PowerTools.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>47</Column>
+          <Text>The type &lt;/C&gt;System.Web.Mvc.Controller&lt;//C&gt; is defined in an assembly that is not referenced.</Text>
+          <Line>54</Line>
+        </IgnoredElement>
+        <IgnoredElement>
+          <Column>21</Column>
+          <Text>Use explicitly typed local variable declaration</Text>
+          <Line>54</Line>
+        </IgnoredElement>
+        <IgnoredElement>
+          <Column>33</Column>
+          <Text>The type &lt;/C&gt;System.Web.Mvc.Controller&lt;//C&gt; is defined in an assembly that is not referenced.</Text>
+          <Line>52</Line>
+        </IgnoredElement>
+        <IgnoredElement>
+          <Column>33</Column>
+          <Text>The type &lt;/C&gt;System.Web.Mvc.Controller&lt;//C&gt; is defined in an assembly that is not referenced.</Text>
+          <Line>43</Line>
+        </IgnoredElement>
+        <IgnoredElement>
+          <Column>46</Column>
+          <Text>The type &lt;/C&gt;System.Web.Mvc.Controller&lt;//C&gt; is defined in an assembly that is not referenced.</Text>
+          <Line>45</Line>
+        </IgnoredElement>
+        <IgnoredElement>
+          <Column>21</Column>
+          <Text>Use explicitly typed local variable declaration</Text>
+          <Line>45</Line>
+        </IgnoredElement>
+      </FilePath>
+    </IgnoredErrorsAndWarnings>
+  </IgnoredErrorsAndWarningsSettings>
+</JustCodeSettings>

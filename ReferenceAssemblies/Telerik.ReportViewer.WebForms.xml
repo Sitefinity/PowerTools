@@ -1,0 +1,614 @@
+<?xml version="1.0"?>
+<doc>
+  <assembly>
+    <name>Telerik.ReportViewer.WebForms</name>
+  </assembly>
+  <members>
+    <member name="T:Telerik.ReportViewer.WebForms.HandlerOperation">
+      <summary>
+            Summary description for HandlerOperation.
+            </summary>
+    </member>
+    <member name="T:Telerik.ReportViewer.WebForms.ReportDataOperation">
+      <summary>
+            Summary description for ReportDataOperation.
+            </summary>
+    </member>
+    <member name="T:Telerik.ReportViewer.WebForms.ReportPageOperation">
+      <summary>
+            Returns the html page corresponsing to the page number. 
+            If the report has not been rendered first request renders it.
+            </summary>
+    </member>
+    <member name="M:Telerik.ReportViewer.WebForms.AjaxHelper.IsUpdatedByAjaxManager(System.Web.UI.Control)">
+      <summary>
+            Checks whether the control is being updated by the Telerik AjaxManager.
+            </summary>
+    </member>
+    <member name="M:Telerik.ReportViewer.WebForms.AjaxHelper.IsInPartialRendering(System.Web.UI.Control)">
+      <summary>
+            Checks whether an update panel is being partially rendered.
+            </summary>
+    </member>
+    <member name="M:Telerik.ReportViewer.WebForms.AjaxHelper.IsRenderedByUpdatePanel(System.Web.UI.Control)">
+      <summary>
+            Checks whether the control is being partially rendered in an UpdatePanel.
+            </summary>
+    </member>
+    <member name="T:Telerik.ReportViewer.WebForms.ParameterValueEditor">
+      <summary>
+            Base class for value editor controls.
+            </summary>
+    </member>
+    <member name="T:Telerik.ReportViewer.WebForms.ToolbarGroup">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Telerik.ReportViewer.WebForms.EmbeddedResourceOperation">
+      <summary>
+            Summary description for EmbeddedResourceOperation.
+            </summary>
+    </member>
+    <member name="T:Telerik.ReportViewer.WebForms.EmbeddedResources">
+      <summary>
+            Summary description for EmbeddedResources.
+            </summary>
+    </member>
+    <member name="T:Telerik.ReportViewer.WebForms.ExportGroup">
+      <summary>
+            Summary description for ExportToolbarGroup.
+            </summary>
+    </member>
+    <member name="T:Telerik.ReportViewer.WebForms.ToolbarButton">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Telerik.ReportViewer.WebForms.ExportFormatButton">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Telerik.ReportViewer.WebForms.HandlerOperationTypes">
+      <summary>
+            Summary description for HandlerOperationTypes.
+            </summary>
+    </member>
+    <member name="T:Telerik.ReportViewer.WebForms.HistoryGroup">
+      <summary>
+            Summary description for RefreshGroup.
+            </summary>
+    </member>
+    <member name="T:Telerik.ReportViewer.WebForms.ImageStream">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Telerik.ReportViewer.WebForms.MultiCheckboxValueEditor">
+      <summary>
+            Drop down control with checkboxes.
+            </summary>
+    </member>
+    <member name="T:Telerik.ReportViewer.WebForms.ReportParameterEditor">
+      <summary>
+            Base control for the report parameter editors. 
+            </summary>
+    </member>
+    <member name="T:Telerik.ReportViewer.WebForms.MultiValueAvailableValuesParamEditor">
+      <summary>
+            Parameter editor for parameters with multi values
+            which have a set of predefined values to select from.
+            </summary>
+    </member>
+    <member name="T:Telerik.ReportViewer.WebForms.MultiValueOnlyParamEditor">
+      <summary>
+            Parameter editor for parameters which have multi values
+            but do not have a set of predefined values to select from.
+            </summary>
+    </member>
+    <member name="T:Telerik.ReportViewer.WebForms.PageNavigationGroup">
+      <summary>
+      </summary>
+    </member>
+    <member name="P:Telerik.ReportViewer.WebForms.ParameterValueModel.Name">
+      <summary>
+            Gets the <see cref="P:Telerik.Reporting.Processing.ParameterValue.Name" />.
+            </summary>
+    </member>
+    <member name="T:Telerik.ReportViewer.WebForms.ParametersAreaGroup">
+      <summary>
+            Summary description for ParametersAreaToobarGroup.
+            </summary>
+    </member>
+    <member name="M:Telerik.ReportViewer.WebForms.ParametersPage.CreateParameterModels(System.Collections.Generic.List{Telerik.Reporting.Processing.Parameter})">
+      <summary>
+            Gets or sets a list of report parameters.
+            </summary>
+    </member>
+    <member name="P:Telerik.ReportViewer.WebForms.ParametersPage.ParameterModels">
+      <summary>
+            Gets or sets a list of parameter models.
+            </summary>
+    </member>
+    <member name="T:Telerik.ReportViewer.WebForms.PrintGroup">
+      <summary>
+            Summary description for PrintGroup.
+            </summary>
+    </member>
+    <member name="T:Telerik.ReportViewer.WebForms.RefreshGroup">
+      <summary>
+            Summary description for RefreshGroup.
+            </summary>
+    </member>
+    <member name="P:Telerik.ReportViewer.WebForms.ReportBookControl.Reports">
+      <summary>
+            Gets the collection of reports that are parts of this ReportBook.
+            </summary>
+    </member>
+    <member name="P:Telerik.ReportViewer.WebForms.ReportInfo.Report">
+      <summary>
+            Specifies the assembly qualified name of the report.
+            </summary>
+    </member>
+    <member name="T:Telerik.ReportViewer.WebForms.ReportToolbar">
+      <summary>
+      </summary>
+    </member>
+    <member name="M:Telerik.ReportViewer.WebForms.ReportViewer.RefreshReport">
+      <summary>
+            Causes the viewer to clear the cache
+            and render the report again.
+            </summary>
+    </member>
+    <member name="M:Telerik.ReportViewer.WebForms.ReportViewer.ForceCreateSession">
+      <summary>
+            Creates the Session object to be available 
+            in case when there is an ASP.NET AJAX request.
+            Otherwise server side exception is raised and a 
+            javascript alert appears.
+            </summary>
+    </member>
+    <member name="M:Telerik.ReportViewer.WebForms.ReportViewer.CheckHttpHandlerRegistrations">
+      <summary>
+            Checks whether the ReportViewer's http handler is registered in the user application's web.config.
+            </summary>
+    </member>
+    <member name="P:Telerik.ReportViewer.WebForms.ReportViewer.ShowHistoryButtons">
+      <summary>
+            Indicates whether the page navigation controls are visible.
+            </summary>
+    </member>
+    <member name="P:Telerik.ReportViewer.WebForms.ReportViewer.ShowNavigationGroup">
+      <summary>
+            Indicates whether the page navigation controls are visible.
+            </summary>
+    </member>
+    <member name="P:Telerik.ReportViewer.WebForms.ReportViewer.ToolbarVisible">
+      <summary>
+            Indicates whether the toolbar should be visible on the viewer.
+            </summary>
+    </member>
+    <member name="P:Telerik.ReportViewer.WebForms.ReportViewer.ParametersAreaVisible">
+      <summary>
+            Indicates whether the ParametersArea should be visible.
+            </summary>
+    </member>
+    <member name="P:Telerik.ReportViewer.WebForms.ReportViewer.DocumentMapVisible">
+      <summary>
+            Indicates whether the DocumentMap should be visible.
+            </summary>
+    </member>
+    <member name="P:Telerik.ReportViewer.WebForms.ReportViewer.ShowParametersButton">
+      <summary>
+            Indicates whether <strong>Parameters</strong> button should be visible. 
+            </summary>
+    </member>
+    <member name="P:Telerik.ReportViewer.WebForms.ReportViewer.ShowZoomSelect">
+      <summary>
+            Indicates whether the <strong>Zoom</strong> input box should be visible.
+            </summary>
+    </member>
+    <member name="P:Telerik.ReportViewer.WebForms.ReportViewer.ShowDocumentMapButton">
+      <summary>
+            Indicates whether <strong>DocumentMap</strong> button should be visible. 
+            </summary>
+    </member>
+    <member name="P:Telerik.ReportViewer.WebForms.ReportViewer.ShowExportGroup">
+      <summary>
+            Indicates whether <strong>Export</strong> group should be visible. 
+            </summary>
+    </member>
+    <member name="P:Telerik.ReportViewer.WebForms.ReportViewer.ShowPrintButton">
+      <summary>
+            Indicates whether <strong>Print</strong> button should be visible. 
+            </summary>
+    </member>
+    <member name="P:Telerik.ReportViewer.WebForms.ReportViewer.ShowRefreshButton">
+      <summary>
+            Indicates whether the <strong>Refresh</strong> button should be visible.
+            </summary>
+    </member>
+    <member name="P:Telerik.ReportViewer.WebForms.ReportViewer.ZoomMode">
+      <summary>
+            Gets or sets the zoom mode of the viewer.
+            </summary>
+    </member>
+    <member name="P:Telerik.ReportViewer.WebForms.ReportViewer.ZoomPercent">
+      <summary>
+            Gets or sets the percentage of zoom used for the report display.
+            </summary>
+    </member>
+    <member name="P:Telerik.ReportViewer.WebForms.ReportViewer.Skin">
+      <summary>
+            Gets or sets the name of the skin that is used by the viewer.
+            </summary>
+      <value>
+            A string containing the name of the currently used skin. The default value is
+            <strong>Default</strong>.
+            </value>
+    </member>
+    <member name="P:Telerik.ReportViewer.WebForms.ReportViewer.SkinsPath">
+      <summary>
+            Gets or sets the relative path of the folder containing the skins.
+            </summary>
+      <value>
+            A string specifying the relative path to the folder which contains
+            ReportViewer skins. The default value is "~/ReportViewer/Skins".
+            </value>
+    </member>
+    <member name="P:Telerik.ReportViewer.WebForms.ReportViewer.Resources">
+      <summary>
+            Use to customize the texts for labels, tooltips and messages.
+            </summary>
+    </member>
+    <member name="P:Telerik.ReportViewer.WebForms.ReportViewer.Report">
+      <summary>
+            Gets or sets the report displayed in the viewer. 
+            </summary>
+    </member>
+    <member name="T:Telerik.ReportViewer.WebForms.ReportViewerFrame">
+      <summary>
+            Summary description for ReportViewerFrame.
+            </summary>
+    </member>
+    <member name="T:Telerik.ReportViewer.WebForms.ReportViewerHandlerNotRegisteredException">
+      <summary>
+            Summary description for ReportViewerHandlerNotRegisteredException.
+            </summary>
+    </member>
+    <member name="T:Telerik.ReportViewer.WebForms.ReportViewerHandlerNotRegisteredIIS7Exception">
+      <summary>
+            Summary description for ReportViewerHandlerNotRegisteredException for II7.
+            </summary>
+    </member>
+    <member name="M:Telerik.ReportViewer.WebForms.Resources.ToScriptObject">
+      <summary>
+            Creates the definition for the JavaScript object.
+            </summary>
+      <returns>
+      </returns>
+    </member>
+    <member name="P:Telerik.ReportViewer.WebForms.Resources.CurrentPageToolTip">
+      <summary>
+            Specifies the tooltip for the current page label.
+            </summary>
+    </member>
+    <member name="P:Telerik.ReportViewer.WebForms.Resources.ExportButtonText">
+      <summary>
+            Specifies the text for the Export button.
+            </summary>
+    </member>
+    <member name="P:Telerik.ReportViewer.WebForms.Resources.ExportToolTip">
+      <summary>
+            Specifies the tooltip for the Export button.
+            </summary>
+    </member>
+    <member name="P:Telerik.ReportViewer.WebForms.Resources.ExportSelectFormatText">
+      <summary>
+            Specifies the &lt;select export format&gt; text in the Export select input.
+            </summary>
+    </member>
+    <member name="P:Telerik.ReportViewer.WebForms.Resources.FirstPageToolTip">
+      <summary>
+            Specifies the tooltip for the FirstPage button.
+            </summary>
+    </member>
+    <member name="P:Telerik.ReportViewer.WebForms.Resources.LabelOf">
+      <summary>
+            Specifies the text for the 'of' conjunction label.
+            </summary>
+    </member>
+    <member name="P:Telerik.ReportViewer.WebForms.Resources.LastPageToolTip">
+      <summary>
+            Specifies the tooltip for the LastPage button.
+            </summary>
+    </member>
+    <member name="P:Telerik.ReportViewer.WebForms.Resources.ProcessingReportMessage">
+      <summary>
+            Specifies the text for the wait message shown while the report is being processed.
+            </summary>
+    </member>
+    <member name="P:Telerik.ReportViewer.WebForms.Resources.NextPageToolTip">
+      <summary>
+            Specifies the tooltip for the NextPage button.
+            </summary>
+    </member>
+    <member name="P:Telerik.ReportViewer.WebForms.Resources.ParametersToolTip">
+      <summary>
+            Specifies the tooltips for the toggle parameters area button. 
+            The two texts are separated by '|'.
+            </summary>
+    </member>
+    <member name="P:Telerik.ReportViewer.WebForms.Resources.DocumentMapToolTip">
+      <summary>
+            Specifies the tooltips for the toggle parameters area button. 
+            The two texts are separated by '|'.
+            </summary>
+    </member>
+    <member name="P:Telerik.ReportViewer.WebForms.Resources.PreviousPageToolTip">
+      <summary>
+            Specifies the tooltip for the PreviousPage button.
+            </summary>
+    </member>
+    <member name="P:Telerik.ReportViewer.WebForms.Resources.PrintToolTip">
+      <summary>
+            Specifies the tooltip for the Print button.
+            </summary>
+    </member>
+    <member name="P:Telerik.ReportViewer.WebForms.Resources.RefreshToolTip">
+      <summary>
+            Specifies the tooltip for the Refresh button.
+            </summary>
+    </member>
+    <member name="P:Telerik.ReportViewer.WebForms.Resources.NavigateBackToolTip">
+      <summary>
+            Specifies the tooltip for the NavigateBack button.
+            </summary>
+    </member>
+    <member name="P:Telerik.ReportViewer.WebForms.Resources.NavigateForwardToolTip">
+      <summary>
+            Specifies the tooltip for the NavigateForward button.
+            </summary>
+    </member>
+    <member name="P:Telerik.ReportViewer.WebForms.Resources.ReportParametersSelectAllText">
+      <summary>
+            Specifies the &lt;select all&gt; text for a multivalue parameter editor.
+            </summary>
+    </member>
+    <member name="P:Telerik.ReportViewer.WebForms.Resources.ReportParametersSelectAValueText">
+      <summary>
+            Specifies the &lt;select a value&gt; text for a dropdown parameter editor.
+            </summary>
+    </member>
+    <member name="P:Telerik.ReportViewer.WebForms.Resources.ReportParametersInvalidValueText">
+      <summary>
+            Specifies the text for the InvalidValue error.
+            </summary>
+    </member>
+    <member name="P:Telerik.ReportViewer.WebForms.Resources.ReportParametersNoValueText">
+      <summary>
+            Specifies the message when a value should be selected for a parameter.
+            </summary>
+    </member>
+    <member name="P:Telerik.ReportViewer.WebForms.Resources.ReportParametersNullText">
+      <summary>
+            Specifies the text for the NULL checkbox.
+            </summary>
+    </member>
+    <member name="P:Telerik.ReportViewer.WebForms.Resources.ReportParametersPreviewButtonText">
+      <summary>
+            Specifies the text for the Preview button.
+            </summary>
+    </member>
+    <member name="P:Telerik.ReportViewer.WebForms.Resources.ReportParametersFalseValueLabel">
+      <summary>
+            Specifies the text for the False value label in a boolean parameter editor.
+            </summary>
+    </member>
+    <member name="P:Telerik.ReportViewer.WebForms.Resources.ReportParametersInputDataError">
+      <summary>
+            Specifies the message which appears when not all the parameters are set.
+            </summary>
+    </member>
+    <member name="P:Telerik.ReportViewer.WebForms.Resources.ReportParametersTrueValueLabel">
+      <summary>
+            Specifies the text for the True value label in a boolean parameter editor.
+            </summary>
+    </member>
+    <member name="P:Telerik.ReportViewer.WebForms.Resources.ZoomToPageWidth">
+      <summary>
+            Specifies the name for the PageWidth zoom mode.
+            </summary>
+    </member>
+    <member name="P:Telerik.ReportViewer.WebForms.Resources.ZoomToWholePage">
+      <summary>
+            Specifies the name for the WholePage zoom mode.
+            </summary>
+    </member>
+    <member name="T:Telerik.ReportViewer.WebForms.SingleValueAvailableValuesParamEditor">
+      <summary>
+            Parameter editor for parameters with a single value
+            which have a set of predefined values to slect from.
+            </summary>
+    </member>
+    <member name="T:Telerik.ReportViewer.WebForms.SingleValueOnlyParamEditor">
+      <summary>
+            Parameter editor for parameters with a single value
+            which do not have a set of predefined values to select from.
+            </summary>
+    </member>
+    <member name="T:Telerik.ReportViewer.WebForms.SR">
+      <summary>
+            A class for handling string resources of the control.
+            </summary>
+    </member>
+    <member name="T:Telerik.ReportViewer.WebForms.SRCategoryAttribute">
+      <summary>
+            Summary description for SRCategoryAttribute.
+            </summary>
+    </member>
+    <member name="T:Telerik.ReportViewer.WebForms.SRErrors">
+      <summary>
+            Summary description for SRErrors.
+            </summary>
+    </member>
+    <member name="T:Telerik.ReportViewer.WebForms.StreamManager">
+      <summary>
+            Manages the streams of the HTML report - the main HTML stream, the image streams, other streams if available.
+            </summary>
+    </member>
+    <member name="M:Telerik.ReportViewer.WebForms.StreamManager.ReplaceTokens(System.Collections.Hashtable)">
+      <summary>
+            Updates the %PageNumber% and %PageCount% tokens in the html with 
+            their correct values, since we are at the end and know everything.
+            </summary>
+    </member>
+    <member name="T:Telerik.ReportViewer.WebForms.TextButton">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Telerik.ReportViewer.WebForms.ToolbarImageButton">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Telerik.ReportViewer.WebForms.ToolbarTextBox">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Telerik.ReportViewer.WebForms.Utils">
+      <summary>
+            Summary description for Utils.
+            </summary>
+    </member>
+    <member name="T:Telerik.ReportViewer.WebForms.WaitControl">
+      <summary>
+            Summary description for WaitControl.
+            </summary>
+    </member>
+    <member name="T:Telerik.ReportViewer.WebForms.ZoomButton">
+      <summary>
+      </summary>
+    </member>
+    <member name="T:Telerik.ReportViewer.Common.ObservableObject">
+      <summary>
+            Represents an observable object.
+            </summary>
+    </member>
+    <member name="M:Telerik.ReportViewer.Common.ObservableObject.OnPropertyChanged(System.String)">
+      <summary>
+            Raises the PropertyChanged event.
+            </summary>
+      <param name="propertyName">
+      </param>
+    </member>
+    <member name="E:Telerik.ReportViewer.Common.ObservableObject.PropertyChanged">
+      <summary>
+            Occurs when a property value changes.
+            </summary>
+    </member>
+    <member name="T:Telerik.ReportViewer.Common.ParameterModel">
+      <summary>
+            Represents the report parameter model to associate the parameter editor UI with.
+            </summary>
+    </member>
+    <member name="P:Telerik.ReportViewer.Common.ParameterModel.AvailableValues">
+      <summary>
+            Gets a list of the available <see cref="T:Telerik.ReportViewer.Common.ParameterValueModel" />s.
+            </summary>
+    </member>
+    <member name="P:Telerik.ReportViewer.Common.ParameterModel.Name">
+      <summary>
+            Gets the <see cref="P:Telerik.Reporting.Processing.Parameter.Name" />.
+            </summary>
+    </member>
+    <member name="P:Telerik.ReportViewer.Common.ParameterModel.TypeName">
+      <summary>
+            Gets the <see cref="P:Telerik.Reporting.Processing.Parameter.Type" />.
+            </summary>
+    </member>
+    <member name="P:Telerik.ReportViewer.Common.ParameterModel.Type">
+      <summary>
+            Gets the <see cref="P:Telerik.Reporting.Processing.Parameter.Type" />.
+            </summary>
+    </member>
+    <member name="P:Telerik.ReportViewer.Common.ParameterModel.Text">
+      <summary>
+            Gets the <see cref="P:Telerik.Reporting.Processing.Parameter.Text" />.
+            </summary>
+    </member>
+    <member name="P:Telerik.ReportViewer.Common.ParameterModel.AllowNull">
+      <summary>
+            Gets the <see cref="P:Telerik.Reporting.Processing.Parameter.AllowNull" />.
+            </summary>
+    </member>
+    <member name="P:Telerik.ReportViewer.Common.ParameterModel.AllowBlank">
+      <summary>
+            Gets the <see cref="P:Telerik.Reporting.Processing.Parameter.AllowNull" />.
+            </summary>
+    </member>
+    <member name="P:Telerik.ReportViewer.Common.ParameterModel.IsNull">
+      <summary>
+            Specifies whether the 'null' value is selected.
+            </summary>
+    </member>
+    <member name="P:Telerik.ReportViewer.Common.ParameterModel.Multivalue">
+      <summary>
+            Gets the <see cref="P:Telerik.Reporting.Processing.Parameter.Multivalue" />.
+            </summary>
+    </member>
+    <member name="P:Telerik.ReportViewer.Common.ParameterModel.AutoRefresh">
+      <summary>
+            Gets the <see cref="P:Telerik.Reporting.Processing.Parameter.AutoRefresh" />.
+            </summary>
+    </member>
+    <member name="P:Telerik.ReportViewer.Common.ParameterModel.SelectedSingleValue">
+      <summary>
+            Gets or sets a single selected value.
+            </summary>
+    </member>
+    <member name="T:Telerik.ReportViewer.Common.ParameterModelCollection`1">
+      <summary>
+            Represents a collection of parameter models.
+            </summary>
+    </member>
+    <member name="P:Telerik.ReportViewer.Common.IParameterValueModel.IsSelected">
+      <summary>
+            Specifies whether the parameter value is selected.
+            </summary>
+    </member>
+    <member name="P:Telerik.ReportViewer.Common.IParameterValueModel.Name">
+      <summary>
+            Gets the <see cref="P:Telerik.Reporting.Processing.ParameterValue.Name" />.
+            </summary>
+    </member>
+    <member name="P:Telerik.ReportViewer.Common.IParameterValueModel.Value">
+      <summary>
+            Gets <see cref="P:Telerik.Reporting.Processing.ParameterValue.Value" /></summary>
+    </member>
+    <member name="T:Telerik.ReportViewer.Common.ParameterValueModel">
+      <summary>
+            Represents the parameter value model.
+            </summary>
+    </member>
+    <member name="P:Telerik.ReportViewer.Common.ParameterValueModel.IsSelected">
+      <summary>
+            Specifies whether the parameter value is selected.
+            </summary>
+    </member>
+    <member name="P:Telerik.ReportViewer.Common.ParameterValueModel.Name">
+      <summary>
+            Gets the <see cref="P:Telerik.Reporting.Processing.ParameterValue.Name" />.
+            </summary>
+    </member>
+    <member name="P:Telerik.ReportViewer.Common.ParameterValueModel.Value">
+      <summary>
+            Gets <see cref="P:Telerik.Reporting.Processing.ParameterValue.Value" /></summary>
+    </member>
+    <member name="P:Telerik.ReportViewer.Common.ParameterValueModel.Owner">
+      <summary>
+            Gets the owner parameter model.
+            </summary>
+    </member>
+    <member name="T:Telerik.ReportViewer.Common.StreamManagerStatus">
+      <summary>
+      </summary>
+    </member>
+  </members>
+</doc>

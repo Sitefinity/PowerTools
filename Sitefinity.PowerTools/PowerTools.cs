@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using Autofac;
+using Sitefinity.PowerTools.Mvc;
 using Sitefinity.PowerTools.RootTemplates;
 
 namespace Sitefinity.PowerTools
@@ -27,6 +28,14 @@ namespace Sitefinity.PowerTools
             }
         }
 
+        public IMvcManager Mvc
+        {
+            get
+            {
+                return this.Container.Resolve<IMvcManager>();
+            }
+        }
+
         public IContainer Container
         {
             get
@@ -45,6 +54,11 @@ namespace Sitefinity.PowerTools
         {
             containerBuilder.RegisterType<RootTemplatesManager>()
                             .As<IRootTemplatesManager>();
+            containerBuilder.RegisterType<MvcManager>()
+                            .As<IMvcManager>();
+            containerBuilder.RegisterType<MvcDesignerStore>()
+                            .As<IMvcDesignerStore>()
+                            .SingleInstance();
         }
 
         private static readonly PowerTools instance = new PowerTools();
