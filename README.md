@@ -26,3 +26,4 @@ Finally, Sitefinity Power Tools project is completely open source, so it should 
 In order to bring tools to developers as soon as possible, our initial commit consists only of one tool - RootTemplates. More tools will follow soon.
 
 1. [Root templates](https://github.com/Sitefinity/PowerTools/wiki/Root-Templates)
+2. [MVC widget designers] (https://github.com/Sitefinity/PowerTools/wiki/Mvc-Widget-Designers)
