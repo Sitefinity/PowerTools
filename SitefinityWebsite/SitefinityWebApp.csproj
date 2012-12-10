@@ -167,11 +167,7 @@
       <HintPath>..\ReferenceAssemblies\System.Web.Helpers.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\ReferenceAssemblies\System.Web.Mvc.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
+    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Web.Optimization">
       <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.0.0\lib\net40\System.Web.Optimization.dll</HintPath>
     </Reference>
@@ -508,8 +504,6 @@
     <Content Include="Sitefinity\Services\Versioning\HistoryService.svc" />
     <Content Include="Sitefinity\Services\Workflow\WorkflowDefinitionService.svc" />
     <Content Include="Sitefinity\Services\Workflow\WorkflowService.svc" />
-    <Content Include="img\glyphicons-halflings-white.png" />
-    <Content Include="img\glyphicons-halflings.png" />
     <Content Include="web.config">
       <SubType>Designer</SubType>
     </Content>

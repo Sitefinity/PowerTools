@@ -80,3 +80,4 @@ C:\PowerTools\PowerTools\Sitefinity.PowerTools\bin\Debug\Microsoft.WindowsAzure.
 C:\PowerTools\PowerTools\Sitefinity.PowerTools\bin\Debug\Twitterizer2.xml
 C:\PowerTools\PowerTools\Sitefinity.PowerTools\bin\Debug\Microsoft.WindowsAzure.Diagnostics.xml
 C:\PowerTools\PowerTools\Sitefinity.PowerTools\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\PowerTools\PowerTools\Sitefinity.PowerTools\bin\Debug\Sitefinity.PowerTools.dll
