@@ -2,6 +2,7 @@
 using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Sitefinity.PowerTools.RootTemplates;
+using System.IO;
 
 namespace Sitefinity.PowerTools.Test.RootTemplates
 {
@@ -75,12 +76,27 @@ namespace Sitefinity.PowerTools.Test.RootTemplates
         }
 
         [TestMethod]
-        [DeploymentItem("RootTemplates/roottemplate.txt")]
         public void SetTemplateFromFile_WhenFromFileHasBeenCalledWithProperFilePath()
         {
-            var rootTemplate = new RootTemplate();
-            rootTemplate = rootTemplate.FromFile("roottemplate.txt");
-            Assert.AreEqual("Root template 1", rootTemplate.Template);
+            var fileName = "roottemplate.txt";
+            var fileContent = "Root template 1";
+
+            try
+            {
+                using (StreamWriter sw = File.CreateText(fileName))
+                {
+                    sw.Write(fileContent);
+                }
+                
+                var rootTemplate = new RootTemplate();
+                rootTemplate = rootTemplate.FromFile(fileName);
+                Assert.AreEqual(fileContent, rootTemplate.Template);
+            }
+            finally
+            {
+                File.Delete(fileName);
+            }
+
         }
 
         [TestMethod]
